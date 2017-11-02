@@ -1,0 +1,278 @@
+body {
+    height: 1000vw;
+}
+h1 {
+    font-size: 48px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+}
+
+p {
+    color: grey;
+    font-size: 18px
+}
+
+ul {
+    color: grey;
+    font-size: 24px;
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+.content{
+    font-family: 'Raleway';
+    color: grey;
+    font-size: 20px;
+}
+
+
+.margin {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* ---- particles.js  ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background-color: #212121;
+    background-image: url("");*/
+    background: -webkit-linear-gradient(black, #FAFAFA); /* For Safari 5.1 to 6.0 */
+	background: linear-gradient(black, #FAFAFA); /* Standard syntax ------ Gradients: #D586B4, #F1A07B,  OR  #A88BCE, #6AAFCA,*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/*Bouncing arrow*/
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+    color: #616161;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    content: "\f078";
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+progress {
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    /* Dimensions */
+    width: 100%;
+    height: .25em;
+
+    /* Reset the apperance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+
+    /* For Firefox/IE10+ */
+    background-color: transparent;
+
+    /* For IE10+, color of the progress bar */
+    color: red;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+    background-color: red;
+}
+
+.flat::-moz-progress-bar {
+    background-color: red;
+}
+
+.single::-webkit-progress-value {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(left, transparent, red);
+}
+
+.single::-moz-progress-bar {
+    background-color: transparent;
+    background-image: -moz-linear-gradient(left, transparent, red);
+}
+
+.multiple::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(-45deg,
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(left, green, red);
+}
+
+.multiple::-moz-progress-bar {
+    background-image: -moz-linear-gradient(-45deg,
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0,0, 0, .1) 66%, transparent 66%),
+    -moz-linear-gradient(left, green, red);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: .25em;
+    display: block;
+}
+
+.progress-bar {
+    background-color: red;
+    width: 50%;
+    display: block;
+    height: inherit;
+}
+
+.item {
+    width: 75vw;
+    height: 300px;
+    margin: 50px auto;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Ubuntu';
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
