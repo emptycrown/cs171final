@@ -1,0 +1,58 @@
+.name {
+	font-size: 11px;
+	text-anchor: end;
+}
+
+.height {
+	color: red;
+	font-size: 11px;
+	text-anchor: end;
+}
+
+#selection-name {
+	font-size: 24px;
+}
+
+th {
+	padding: 5px 50px 5px 0px;
+}
+
+tr:nth-child(even) {
+	background-color: #FFFFAA;
+}
+
+tr, th {
+	border: solid;
+	border-width: 1px 0;
+}
+
+h1 {
+	margin: 20px 30px 30px 30px;
+	width: 500px;
+	font-size: 36px;
+	background-color: yellow;
+}
+
+.area {
+	fill: red;
+}
+
+.title {
+	font-size: 24px;
+	color: blue;
+	font-style: italic;
+	text-decoration: underline;
+	text-anchor: middle;
+}
+
+.txt {
+	font-weight: bold;
+}
+
+.txtDate {
+	font-size: 10px;
+}
+
+.bars {
+	fill: yellow;
+}
