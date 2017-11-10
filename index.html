@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Raleway|Oxygen|Ubuntu|Lato|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Raleway:900|Oxygen|Ubuntu|Lato|Roboto|Archivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css" />
+    <link href="css/nouislider.min.css" rel="stylesheet">
+
     
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,23 +18,167 @@
     <div id="wrapper">
         <div class="content">
             <div id="title">
-                An Evergreen Planet: Preserving our World’s Natural Forests
+                <div class="container">
+                    An Evergreen Planet: <br/>
+                    Preserving our World’s Natural Forests
+                </div>
+
             </div>
             <div class="container">
-                <div class="item" data-aos="fade-up">Christine & Co</div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s4"><div class="item" data-aos="fade-up">Christine & Co</div></div>
-                    <div class="col s4"><div class="item" data-aos="fade-up">Christine & Co</div></div>
-                    <div class="col s4"><div class="item" data-aos="fade-up">Christine & Co</div></div>
+                <div class="item" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col s6">
+                            <div id="section11">
+                                <h3>Game!</h3>
+                                <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+                                    You're tasked with saving the incoming trees, represented by dots, by assigning them to the correct color.
+                                    The areas are divided by today's economic conditions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s6" id="section12">
+                            <div id="game">
+                                <div class="empty"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="container">
-                <div class="item" data-aos="fade-up">Christine & Co</div>
+                <div class="row">
+                    <div class="col s4"><div class="item" data-aos="fade-up">
+                        <div class="section2">
+                            <h3>Text</h3>
+                            <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+
+                            </p>
+                            <div class="centering">
+                                <div class="bottom-icon first"><i class="material-icons">public</i></div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="col s4"><div class="item" data-aos="fade-up">
+                        <div class="section2">
+                            <h3>Text</h3>
+                            <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+
+                            </p>
+                            <div class="centering">
+                                <div class="bottom-icon second"><i class="material-icons">terrain</i></div>
+                            </div>
+                        </div>
+                    </div></div>
+                    <div class="col s4"><div class="item" data-aos="fade-up">
+                        <div class="section2">
+                            <h3>Text</h3>
+                            <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+
+                            </p>
+                            <div class="centering">
+                                <div class="bottom-icon third"><i class="material-icons">local_florist</i></div>
+                            </div>
+                        </div>
+                    </div></div>
+                </div>
             </div>
             <div class="container">
-                <div class="item" data-aos="fade-up">Christine & Co</div>
+                <div class="item" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col s6">
+                            <div id="section11">
+                                <h3>Game!</h3>
+                                <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+                                    You're tasked with saving the incoming trees, represented by dots, by assigning them to the correct color.
+                                    The areas are divided by today's economic conditions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s6" id="section12">
+                            <svg
+                                    height="515"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    viewBox="0 0 560 515"
+                                    width="560"
+                                    class="animation"
+                            >
+                                <g id="tile">
+                                    <path id="tile-floor" />
+                                    <path id="tile-right" />
+                                    <path id="tile-left" />
+                                </g>
+
+                                <path id="drive" />
+
+                                <g id="tree">
+                                    <g id="tree-earth">
+                                        <path id="tree-earth-left" />
+                                        <path id="tree-earth-right" />
+                                    </g>
+
+                                    <g id="tree-trunk">
+                                        <path id="tree-trunk-left" />
+                                        <path id="tree-trunk-right" />
+                                    </g>
+
+                                    <g id="tree-leaves">
+                                        <path id="tree-leaves-left" />
+                                        <path id="tree-leaves-right" />
+                                        <path id="tree-leaves-top" />
+                                    </g>
+                                </g>
+
+                                <g id="building">
+                                    <g id="building-earth">
+                                        <path id="building-earth-left" />
+                                        <path id="building-earth-right" />
+                                    </g>
+
+                                    <g id="building-tower">
+                                        <path id="building-tower-left" />
+                                        <path id="building-tower-right" />
+                                        <path id="building-tower-top" />
+                                    </g>
+
+                                    <g id="building-roof">
+                                        <path id="building-roof-left" />
+                                        <path id="building-roof-right" />
+                                    </g>
+
+                                    <g id="building-door">
+                                        <path id="building-door-frame-bottom" />
+                                        <path id="building-door-frame-right" />
+                                        <path id="building-door-block" />
+                                        <path id="building-door-trim" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="item" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="section41">
+                                <h3>Game!</h3>
+                                <p>To demonstrate the stark difference between the different countries, we bring you the game on the right.
+                                    You're tasked with saving the incoming trees, represented by dots, by assigning them to the correct color.
+                                    The areas are divided by today's economic conditions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div id="icongrid" class="section42">
+                                <div id="slider"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 
@@ -40,6 +186,7 @@
 
         </div>
         <div class="back">
+            <div class="section"></div>
             <div class="section"></div>
             <div class="section"></div>
             <div class="section"></div>
@@ -59,8 +206,14 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/d3.min.js"></script>
     <script type="text/javascript" src="js/d3-tip.js"></script>
+    <script src="https://d3js.org/d3-color.v1.min.js"></script>
+    <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/aos.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/icongrid.js"></script>
+    <script src="./client.dist.js"></script>
 </body>
 </html>

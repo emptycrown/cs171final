@@ -55,3 +55,9 @@ $(document).ready(function() {
 AOS.init({
     duration: 1200,
 })
+
+$(document).keydown(function(e) {
+    if (e.which == 32) {
+        return false;
+    }
+});

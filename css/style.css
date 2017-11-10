@@ -1,9 +1,12 @@
 body {
-    background-image: url('../images/forest_background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #009688 100%);   /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,#009688)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#009688 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */
 }
 h1 {
     font-size: 48px;
@@ -197,7 +200,7 @@ progress {
 
     /* Dimensions */
     width: 100%;
-    height: .25em;
+    height: .4em;
 
     /* Reset the apperance */
     -webkit-appearance: none;
@@ -269,10 +272,8 @@ progress::-webkit-progress-bar {
 
 .item {
     width: 100%;
-    height: 30vw;
-    padding: 75px;
+    height: 500px;
     margin-top: 5vw;
-    text-align: center;
     font-size: 3em;
     font-family: 'Ubuntu';
     background: #EEEEEE;
@@ -296,11 +297,11 @@ progress::-webkit-progress-bar {
 #title {
     height: 50vw;
     width: 100%;
-    color: white;
-    text-align: center;
-    font-family: 'Oxygen';
-    font-size: 40px;
+    color: #212121;
+    font-family: 'Raleway';
+    font-size: 75px;
     padding-top: 100px;
+    font-weight: 900;
 }
 
 .section {
@@ -323,4 +324,118 @@ progress::-webkit-progress-bar {
     background: none;
     height: 60vw;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.section:last-child {
+    background-image: url('../images/forest_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+#game-svg {
+    position: relative;
+    border-radius: 3px;
+}
+
+#section11 {
+    margin: 50px;
+}
+
+#section12 {
+    text-align: right;
+}
+
+.section2 {
+    margin: 50px;
+    padding-top: 50px;
+}
+
+#icongrid {
+    display: inline-block;
+}
+
+.section41 {
+    margin: 50px;
+ }
+
+.section42 {
+font-size: 40px;
+margin: 50px;
+}
+
+i.tree-filled {
+    color: green;
+}
+
+i.tree-blank {
+    color: green;
+    opacity: 0.3;
+}
+
+.animation {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#tile-floor { fill: rgb( 125, 180, 89 ); }
+#tile-right { fill: rgb( 85, 111, 67 ); }
+#tile-left { fill: rgb( 63, 82, 50 ); }
+#drive { fill: rgb( 102, 168, 62 ); }
+#tree-earth-left { fill: rgb( 79, 69, 48 ); }
+#tree-earth-right { fill: rgb( 54, 47, 32 ); }
+#tree-trunk-left { fill: rgb( 138, 116, 71 ); }
+#tree-trunk-right { fill: rgb( 79, 65, 36 ); }
+#tree-leaves-left { fill: rgb( 52, 78 ,36 ); }
+#tree-leaves-right { fill: rgb( 82, 122 ,55 ); }
+#tree-leaves-top { fill: rgb( 100, 156 ,62 ); }
+#building-earth-left { fill: rgb( 85, 130, 56 ); }
+#building-earth-right { fill: rgb( 57, 84, 39 ); }
+#building-tower-left { fill: rgb( 168, 173, 168 ); }
+#building-tower-right { fill: rgb( 115, 124, 114 ); }
+#building-tower-top { fill: rgb( 209, 215, 209 ); }
+#building-roof-left { fill: rgb( 115, 124, 114 ); }
+#building-roof-right { fill: rgb( 168, 173, 168 ); }
+#building-door-frame-bottom { fill: rgb( 209, 215, 209 ); }
+#building-door-frame-right { fill: rgb( 168, 173, 168 ); }
+#building-door-block { fill: rgb( 70, 75, 70 ); }
+#building-door-trim { fill: rgb( 38, 39, 38 ); }
+html:not(.one) #building-door-block,
+html:not(.one) #building-door-trim,
+html:not(.two) #building-roof-left,
+html:not(.two) #building-roof-right,
+html:not(.two) #building-door-frame-bottom,
+html:not(.two) #building-door-frame-right {
+    fill: none;
+}
+
+.bottom-icon {
+    border-radius: 50%;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+.bottom-icon i {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.bottom-icon.second {
+    background-color: #009688;
+    color: #99D5CF;
+}
+
+.bottom-icon.third {
+    background-color: #00BCD4;
+    color: #CCF2F6;
+}
+
+.bottom-icon.first {
+    background-color: #388E3C;
+    color: #AFD2B1;
 }
