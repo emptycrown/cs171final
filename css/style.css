@@ -439,3 +439,80 @@ html:not(.two) #building-door-frame-right {
     background-color: #388E3C;
     color: #AFD2B1;
 }
+
+/*YOU DRAW IT*/
+.name {
+    font-size: 11px;
+    text-anchor: end;
+}
+
+.height {
+    color: red;
+    font-size: 11px;
+    text-anchor: end;
+}
+
+#selection-name {
+    font-size: 24px;
+}
+
+th {
+    padding: 5px 50px 5px 0px;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFAA;
+}
+
+tr, th {
+    border: solid;
+    border-width: 1px 0;
+}
+
+.done-button {
+    color: white;
+    font-size: 14px;
+}
+
+.done-button-container {
+    cursor: pointer;
+}
+
+
+.area {
+    fill: red;
+}
+
+.youdrawit-title {
+    font-size: 24px;
+    text-anchor: middle;
+    font-family: 'Oxygen';
+}
+
+.txt {
+    font-weight: bold;
+}
+
+.txtDate {
+    font-size: 10px;
+}
+
+.bars {
+    fill: yellow;
+}
+
+#correct {
+    fill-opacity: 0;
+    stroke-width: 2;
+    stroke-dasharray: 870;
+    stroke-dashoffset: 870;
+    animation: draw 3s linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

@@ -61,3 +61,7 @@ $(document).keydown(function(e) {
         return false;
     }
 });
+
+
+//initialize visualizations
+var youDrawItVis = new youDrawItVis("youDrawItvis", "data/zaatari-refugee-camp-population.csv");

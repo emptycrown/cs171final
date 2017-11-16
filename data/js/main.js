@@ -1,1 +1,0 @@
-var youDrawItVis = new youDrawItVis("youDrawItvis", "data/zaatari-refugee-camp-population.csv");
