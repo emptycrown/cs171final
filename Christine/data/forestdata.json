@@ -1,0 +1,301 @@
+{
+  "years": [
+    {
+      "Year": 1995,
+      "Expenditures": 40828356.9
+    },
+    {
+      "Year": 1996,
+      "Expenditures": 40755591.2
+    },
+    {
+      "Year": 1997,
+      "Expenditures": 40682826
+    },
+    {
+      "Year": 1998,
+      "Expenditures": 40610060.2
+    },
+    {
+      "Year": 1999,
+      "Expenditures": 40537295.1
+    },
+    {
+      "Year": 2000,
+      "Expenditures": 40464529.5
+    },
+    {
+      "Year": 2001,
+      "Expenditures": 40418814.1
+    },
+    {
+      "Year": 2002,
+      "Expenditures": 40373098.6
+    },
+    {
+      "Year": 2003,
+      "Expenditures": 40327383.3
+    },
+    {
+      "Year": 2004,
+      "Expenditures": 40281667.9
+    },
+    {
+      "Year": 2005,
+      "Expenditures": 40235952.5
+    },
+    {
+      "Year": 2006,
+      "Expenditures": 40201872.6
+    },
+    {
+      "Year": 2007,
+      "Expenditures": 40167792.3
+    },
+    {
+      "Year": 2008,
+      "Expenditures": 40133712.7
+    },
+    {
+      "Year": 2009,
+      "Expenditures": 40099632.7
+    },
+    {
+      "Year": 2010,
+      "Expenditures": 40065552.8
+    },
+    {
+      "Year": 2011,
+      "Expenditures": 39960923.6
+    },
+    {
+      "Year": 2012,
+      "Expenditures": 39927864.5
+    },
+    {
+      "Year": 2013,
+      "Expenditures": 39894805.4
+    },
+    {
+      "Year": 2014,
+      "Expenditures": 39861746.3
+    },
+    {
+      "Year": 2015,
+      "Expenditures": 39828687.1
+    }
+  ],
+  "layers":[
+    {
+      "Year": 1995,
+      "East Asia & Pacific":6509586,
+      "Europe & Central Asia": 3141052.7,
+      "Latin America & Caribbean":8287907.6,
+      "Middle East & North Africa": 612969.5,
+      "North America": 6512686.5,
+      "South Asia": 1446805.6,
+      "Sub-Saharan Africa": 14319720.5
+    },
+    {
+      "Year": 1996,
+      "East Asia & Pacific": 6505985.6,
+      "Europe & Central Asia": 3146972.6,
+      "Latin America & Caribbean": 8249231.8,
+      "Middle East & North Africa": 609266.6,
+      "North America": 6513294.4,
+      "South Asia": 1442434.3,
+      "Sub-Saharan Africa": 14290770.3
+    },
+    {
+      "Year": 1997,
+      "East Asia & Pacific": 6502385.2,
+      "Europe & Central Asia": 3152892.7,
+      "Latin America & Caribbean": 8210556,
+      "Middle East & North Africa": 605563.7,
+      "North America": 6513902.3,
+      "South Asia": 1438063,
+      "Sub-Saharan Africa": 14261820.4
+    },
+    {
+      "Year": 1998,
+      "East Asia & Pacific": 6498784.8,
+      "Europe & Central Asia": 3158812.6,
+      "Latin America & Caribbean": 8171880.1,
+      "Middle East & North Africa": 601860.9,
+      "North America": 6514510.2,
+      "South Asia": 1433691.6,
+      "Sub-Saharan Africa": 14232870.2
+    },
+    {
+      "Year": 1999,
+      "East Asia & Pacific": 6495184.4,
+      "Europe & Central Asia": 3164732.7,
+      "Latin America & Caribbean": 8133204.3,
+      "Middle East & North Africa": 598158.1,
+      "North America": 6515118.1,
+      "South Asia": 1429320.3,
+      "Sub-Saharan Africa": 14203920.3
+    },
+    {
+      "Year": 2000,
+      "East Asia & Pacific":6491584.1,
+      "Europe & Central Asia": 3170652.6,
+      "Latin America & Caribbean": 8094528.5,
+      "Middle East & North Africa": 594455.2,
+      "North America": 6515726,
+      "South Asia": 1424949,
+      "Sub-Saharan Africa": 14174970.1
+    },
+    {
+      "Year": 2001,
+      "East Asia & Pacific": 6514608.3,
+      "Europe & Central Asia":3171694.2,
+      "Latin America & Caribbean": 8051865.5,
+      "Middle East & North Africa": 594989.8,
+      "North America": 6517708.8,
+      "South Asia": 1424646.3,
+      "Sub-Saharan Africa": 14145630
+    },
+    {
+      "Year": 2002,
+      "East Asia & Pacific": 6537632.6,
+      "Europe & Central Asia": 3172735.7,
+      "Latin America & Caribbean": 8009202.4,
+      "Middle East & North Africa": 595524.5,
+      "North America": 6519691.6,
+      "South Asia": 1424343.6,
+      "Sub-Saharan Africa": 14116289.8
+    },
+    {
+      "Year": 2003,
+      "East Asia & Pacific": 6560657.1,
+      "Europe & Central Asia": 3173777.2,
+      "Latin America & Caribbean": 7966539.5,
+      "Middle East & North Africa": 596059,
+      "North America": 6521674.4,
+      "South Asia": 1424040.9,
+      "Sub-Saharan Africa": 14086949.6
+    },
+    {
+      "Year": 2004,
+      "East Asia & Pacific": 6583681.4,
+      "Europe & Central Asia": 3174818.8,
+      "Latin America & Caribbean": 7923876.4,
+      "Middle East & North Africa": 596593.7,
+      "North America": 6523657.2,
+      "South Asia": 1423738.2,
+      "Sub-Saharan Africa": 14057609.4
+    },
+    {
+      "Year": 2005,
+      "East Asia & Pacific": 6606705.6,
+      "Europe & Central Asia": 3175860.4,
+      "Latin America & Caribbean": 7881213.5,
+      "Middle East & North Africa": 597128.3,
+      "North America": 6525640,
+      "South Asia": 1423435.5,
+      "Sub-Saharan Africa": 14028269.2
+    },
+    {
+      "Year": 2006,
+      "East Asia & Pacific": 6606732.4,
+      "Europe & Central Asia": 3179092.8,
+      "Latin America & Caribbean": 7851364.7,
+      "Middle East & North Africa": 595713.1,
+      "North America": 6533010.8,
+      "South Asia": 1426442.8,
+      "Sub-Saharan Africa": 14011808.8
+    },
+    {
+      "Year": 2007,
+      "East Asia & Pacific": 6606758.9,
+      "Europe & Central Asia": 3182325.1,
+      "Latin America & Caribbean": 7821515.9,
+      "Middle East & North Africa": 594298,
+      "North America": 6540381.6,
+      "South Asia": 1429450,
+      "Sub-Saharan Africa": 13995348.4
+    },
+    {
+      "Year": 2008,
+      "East Asia & Pacific": 6606785.6,
+      "Europe & Central Asia": 3185557.7,
+      "Latin America & Caribbean": 7791667.3,
+      "Middle East & North Africa": 592882.8,
+      "North America": 6547752.4,
+      "South Asia": 1432457.3,
+      "Sub-Saharan Africa": 13978888
+    },
+    {
+      "Year": 2009,
+      "East Asia & Pacific":6606812.3,
+      "Europe & Central Asia": 3188790,
+      "Latin America & Caribbean": 7761818.5,
+      "Middle East & North Africa": 591467.7,
+      "North America": 6555123.2,
+      "South Asia": 1435464.6,
+      "Sub-Saharan Africa": 13962427.6
+    },
+    {
+      "Year": 2010,
+      "East Asia & Pacific": 6606839,
+      "Europe & Central Asia": 3192022.3,
+      "Latin America & Caribbean": 7731969.8,
+      "Middle East & North Africa": 590052.6,
+      "North America": 6562494,
+      "South Asia": 1438471.9,
+      "Sub-Saharan Africa": 13945967.2
+    },
+    {
+      "Year": 2011,
+      "East Asia & Pacific": 6616749.7,
+      "Europe & Central Asia": 3193766.3,
+      "Latin America & Caribbean": 7716149,
+      "Middle East & North Africa": 587718.4,
+      "North America": 6564794.2,
+      "South Asia": 1434781.2,
+      "Sub-Saharan Africa": 13849245
+    },
+    {
+      "Year": 2012,
+      "East Asia & Pacific": 6626660.2,
+      "Europe & Central Asia": 3195510.4,
+      "Latin America & Caribbean": 7700328.3,
+      "Middle East & North Africa": 585384.2,
+      "North America": 6567094.3,
+      "South Asia": 1431090.5,
+      "Sub-Saharan Africa": 13824092.9
+    },
+    {
+      "Year": 2013,
+      "East Asia & Pacific": 6636570.8,
+      "Europe & Central Asia": 3197254.4,
+      "Latin America & Caribbean": 7684507.6,
+      "Middle East & North Africa": 583050,
+      "North America": 6569394.5,
+      "South Asia": 1427399.8,
+      "Sub-Saharan Africa": 13798940.8
+    },
+    {
+      "Year": 2014,
+      "East Asia & Pacific": 6646481.5,
+      "Europe & Central Asia": 3198998.5,
+      "Latin America & Caribbean": 7668686.9,
+      "Middle East & North Africa": 580715.8,
+      "North America": 6571694.6,
+      "South Asia": 1423709.1,
+      "Sub-Saharan Africa": 13773788.5
+    },
+    {
+      "Year": 2015,
+      "East Asia & Pacific": 6656392.1,
+      "Europe & Central Asia": 3200742.5,
+      "Latin America & Caribbean": 7652866.2,
+      "Middle East & North Africa": 578381.6,
+      "North America": 6573994.8,
+      "South Asia": 1420018.3,
+      "Sub-Saharan Africa":13748636.4
+    }
+  ]
+}
+

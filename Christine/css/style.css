@@ -1,0 +1,79 @@
+
+/* YOUR CSS STYLES */
+.mytooltip {
+    background-color: white;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+    text-align: center
+    color: black;
+}
+
+.SA, .LA, .EUR, .EA, .ME, .SSA, .NA {
+    width: 20px;
+    height: 20px;
+    border: solid 2px white;
+}
+
+.SA {
+    background-color: #ff7f0e
+}
+
+.LA {
+    background-color: #8c564b
+}
+
+.EUR {
+    background-color: #d62728
+}
+
+.EA {
+    background-color: #e377c2
+}
+
+.ME {
+    background-color: #9467bd
+}
+
+.SSA {
+    background-color: #2ca02c
+}
+
+.NA {
+    background-color: #7f7f7f
+}
+
+/* General page updates */
+body {
+    font-family: "PT Sans";
+    font-size: 14px;
+}
+
+.form-control {
+    margin-left: 700px;
+    width: 10%;
+}
+
+table {
+    margin-top: 200px;
+    margin-left: -100px;
+}
+
+h3 {
+    margin-left: 50px;
+    color: black;
+}
+
+
+.area {
+    opacity: 0.7;
+    clip-path: url(#clip);
+}
+.area:hover {
+    opacity: 1;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
