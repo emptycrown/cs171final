@@ -491,6 +491,7 @@ tr, th {
 
 .txt {
     font-weight: bold;
+    font-size: 18px;
 }
 
 .txtDate {
@@ -515,4 +516,24 @@ tr, th {
     to {
         stroke-dashoffset: 0;
     }
+}
+
+.areaPos {
+    fill: green;
+}
+
+.areaNeg {
+    fill: red;
+}
+
+.title {
+    font-size: 24px;
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+    text-anchor: middle;
+}
+
+.txtRate {
+    font-size: 10px;
 }
