@@ -25,7 +25,7 @@ function loadData() {
             allData.layers.forEach(function(d){
                 for (var column in d) {
                     if (d.hasOwnProperty(column) && column != "Year") {
-                        d[column] = parseFloat(d[column])**1.5/100000000;
+                        d[column] = parseFloat(d[column])/100000000;
                     } else if(d.hasOwnProperty(column) && column == "Year") {
                         d[column] = parseDate(d[column].toString());
                     }
