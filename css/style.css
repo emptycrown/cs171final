@@ -1,12 +1,10 @@
 body {
+    background-image: url('../images/forest_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #009688 100%);   /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,#009688)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,#009688 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#009688 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */
 }
 h1 {
     font-size: 48px;
@@ -311,7 +309,7 @@ progress::-webkit-progress-bar {
 }
 
 .section {
-    height: 40vw;
+    height: 42vw;
     width: 100vw;
     margin-top: -6%;
 }
@@ -326,18 +324,20 @@ progress::-webkit-progress-bar {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 
-.section:nth-child(1) {
+.section:nth-child(3n) {
     background: none;
+}
+
+.section:nth-child(1) {
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fff, #80CBC4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fff, #80CBC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     height: 60vw;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .section:last-child {
-    background-image: url('../images/forest_background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
     height: 30vw;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
