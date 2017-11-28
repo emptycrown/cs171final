@@ -10,7 +10,11 @@ var http = require('http').Server(app);
 app.use(morgan(':remote-addr - :remote-user [:date[clf]] ":method :url HTTP/:http-version" :status :res[content-length] :response-time ms'));
 
 // Serve static assets
-app.use(express.static('.'));
+app.use('/js', express.static('js'));
+app.use('/css', express.static('css'));
+app.use('/data', express.static('data'));
+app.use('/images', express.static('images'));
+app.use('/font-awesome', express.static('font-awesome'));
 
 //Favicon
 app.use(favicon(path.join(__dirname,'favicon.ico')));
