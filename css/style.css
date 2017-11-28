@@ -24,6 +24,8 @@ h3 {
     font-size: 24px;
     font-family: 'Ubuntu';
     font-weight: 300;
+    margin-bottom: 42px;
+    color: #00897B;
 }
 
 p {
@@ -44,6 +46,10 @@ a {
 canvas {
     display: block;
     vertical-align: bottom;
+}
+
+b {
+    color: #212121;
 }
 
 .content{
@@ -272,10 +278,10 @@ progress::-webkit-progress-bar {
 
 .item {
     width: 100%;
-    height: 500px;
+    height: 550px;
     margin-top: 5vw;
     font-size: 3em;
-    font-family: 'Ubuntu';
+    font-family: 'Lato', sans-serif;
     background: #EEEEEE;
     box-shadow: 0 10px 10px rgba(0,0,0,0.4);
     border-radius: 3px;
@@ -345,6 +351,10 @@ progress::-webkit-progress-bar {
     margin: 50px;
 }
 
+.padding {
+    margin: 50px;
+}
+
 #section12 {
     text-align: right;
 }
@@ -352,6 +362,10 @@ progress::-webkit-progress-bar {
 .section2 {
     margin: 50px;
     padding-top: 50px;
+}
+
+.split {
+    position: relative;
 }
 
 #icongrid {
@@ -418,6 +432,8 @@ html:not(.two) #building-door-frame-right {
     text-align: center;
     height: 100px;
     width: 100px;
+    position: absolute;
+    bottom: 50px;
 }
 
 .bottom-icon i {
@@ -469,13 +485,25 @@ tr, th {
     border-width: 1px 0;
 }
 
-.done-button {
-    color: white;
-    font-size: 14px;
-}
 
 .done-button-container {
     cursor: pointer;
+    position: absolute;
+    top: 90px;
+    right: 80px;
+    font-size: 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 0 10px 0;
+    color: #00897B;
+    transition: background-color .2s;
+}
+
+.done-button-container:hover {
+    background-color: #00897B;
+    color: white;
+    border-color: #00897B;
 }
 
 
@@ -519,21 +547,103 @@ tr, th {
 }
 
 .areaPos {
-    fill: green;
+    fill: #00897B;
 }
 
 .areaNeg {
-    fill: red;
+    fill: #F4511E;
 }
 
 .title {
     font-size: 24px;
-    color: blue;
-    font-style: italic;
-    text-decoration: underline;
     text-anchor: middle;
 }
 
 .txtRate {
     font-size: 10px;
+}
+
+.section-area {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-area-header {
+    margin-bottom: -40px;
+}
+
+/* YOUR CSS STYLES */
+.mytooltip {
+    background-color: white;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+    font-size: 24px;
+    text-align: center
+    color: black;
+}
+
+.SA, .LA, .EUR, .EA, .ME, .SSA, .NA {
+    width: 20px;
+    height: 20px;
+    border: solid 2px white;
+}
+
+.SA {
+    background-color: #ff7f0e
+}
+
+.LA {
+    background-color: #8c564b
+}
+
+.EUR {
+    background-color: #d62728
+}
+
+.EA {
+    background-color: #e377c2
+}
+
+.ME {
+    background-color: #9467bd
+}
+
+.SSA {
+    background-color: #2ca02c
+}
+
+.NA {
+    background-color: #7f7f7f
+}
+
+
+.form-control {
+    margin-left: 700px;
+    width: 10%;
+}
+
+table {
+    font-size: 10px;
+    margin-top: 130px;
+    margin-left: -70px;
+}
+
+
+
+.area {
+    opacity: 0.7;
+    clip-path: url(#clip);
+}
+.area:hover {
+    opacity: 1;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.game {
+    height: 500px;
 }

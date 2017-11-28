@@ -90,7 +90,7 @@ OrderedVis.prototype.initVis = function() {
 
         focus.append("line")
             .attr("class", "x")
-            .style("stroke", "blue")
+            .style("stroke", "grey")
             .attr("y1", 0)
             .attr("y2", height);
 

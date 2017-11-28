@@ -84,7 +84,6 @@ youDrawItVis.prototype.initVis = function() {
 
         focus.append("line")
             .attr("class", "x")
-            .style("stroke", "blue")
             .attr("y1", 0)
             .attr("y2", height);
 
@@ -105,7 +104,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(displayData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "green")
+            .attr("stroke", "#00897B")
             .attr("fill", "none")
             .attr("id", "display");
 
@@ -135,21 +134,13 @@ youDrawItVis.prototype.initVis = function() {
             .on("mouseup", decrement)
             .on("mouseout", decrement);
 
-        vis.svg.append("rect")
-            .attr("x", width - 100)
-            .attr("y", 10)
-            .attr("opacity", .7)
+        d3.select("body").select("#" + vis.parentElement).append("div")
             .attr("width", 70)
             .attr("height", 40)
-            .style("fill", "red")
             .attr("class", "done-button-container")
+            .html("<i class='fa fa-check'></i>")
             .on("click", showCorrect);
 
-        vis.svg.append("text")
-            .attr("x", width - 85)
-            .attr("y", 35)
-            .text("DONE")
-            .attr("class", "done-button");
 
         
 
@@ -158,7 +149,7 @@ youDrawItVis.prototype.initVis = function() {
                 .datum(vis.correctData)
                 .attr("d", vis.line)
                 .attr("stroke-width", 2)
-                .attr("stroke", "red")
+                .attr("stroke", "#F4511E")
                 .attr("fill", "none")
                 .attr("id", "correct");
         }
