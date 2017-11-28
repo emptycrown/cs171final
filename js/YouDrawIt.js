@@ -259,7 +259,7 @@ youDrawItVis.prototype.initVis = function() {
             .call(yAxis);
 
         vis.svg.append("text")
-            .text("Camp Population")
+            .text("Global Deforestation")
             .attr("class", "youdrawit-title")
             .attr("x", width / 2)
             .attr("y", 0);
