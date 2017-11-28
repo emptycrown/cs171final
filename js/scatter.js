@@ -27,6 +27,7 @@ scatter.prototype.initVis = function() {
     updateVis();
 
    function updateVis() {
+
         vis.val = d3.select("#icon-select").property("value");
         vis.data.forEach(function(d){
             d[1989] = (d[vis.val] - d[1990]) / d[1990] || 0;
@@ -159,5 +160,6 @@ scatter.prototype.initVis = function() {
             .attr("stroke", "black");
 
     }
-    d3.select("#icon-select").on("change", updateVis);
+
+    $("#icon-select").material_select(updateVis);
 }

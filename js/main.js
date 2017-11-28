@@ -52,6 +52,11 @@ $(document).ready(function() {
   }
 });
 
+$(document).ready(function() {
+    $('select').material_select();
+});
+
+
 AOS.init({
     duration: 1200,
 })
@@ -152,8 +157,13 @@ queue()
             d.Rate = +d.Rate || 0;
             d.Region = d.Region || 0;
         });
+
+    //Scatter plot
     scatterdata = all;
     createScatter();
+
+    //Tree grid
+    var treeGrid = new TreeGrid("slider", all);
 });
 
 
