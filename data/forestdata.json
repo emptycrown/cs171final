@@ -88,214 +88,171 @@
   "layers":[
     {
       "Year": 1995,
-      "East Asia & Pacific":6509586,
-      "Europe & Central Asia": 3141052.7,
-      "Latin America & Caribbean":8287907.6,
-      "Middle East & North Africa": 612969.5,
-      "North America": 6512686.5,
-      "South Asia": 1446805.6,
-      "Sub-Saharan Africa": 14319720.5
+      "Low Income": 30.7117958648674,
+      "Lower middle income":27.8283510916405,
+      "Middle income":32.8976941080988,
+      "Upper middle income":34.914538753318,
+      "High income":28.4856683773669
     },
     {
       "Year": 1996,
-      "East Asia & Pacific": 6505985.6,
-      "Europe & Central Asia": 3146972.6,
-      "Latin America & Caribbean": 8249231.8,
-      "Middle East & North Africa": 609266.6,
-      "North America": 6513294.4,
-      "South Asia": 1442434.3,
-      "Sub-Saharan Africa": 14290770.3
+      "Low Income": 30.5342368200766,
+      "Lower middle income":27.6553253550114,
+      "Middle income":32.8260221471697,
+      "Upper middle income":34.8832021834362,
+      "High income":28.5127790233546
     },
     {
       "Year": 1997,
-      "East Asia & Pacific": 6502385.2,
-      "Europe & Central Asia": 3152892.7,
-      "Latin America & Caribbean": 8210556,
-      "Middle East & North Africa": 605563.7,
-      "North America": 6513902.3,
-      "South Asia": 1438063,
-      "Sub-Saharan Africa": 14261820.4
+      "Low Income": 30.3566777752858,
+      "Lower middle income":27.4823123471629,
+      "Middle income":32.7539393137468,
+      "Upper middle income":34.8512486540443,
+      "High income":28.4837593673603
     },
     {
       "Year": 1998,
-      "East Asia & Pacific": 6498784.8,
-      "Europe & Central Asia": 3158812.6,
-      "Latin America & Caribbean": 8171880.1,
-      "Middle East & North Africa": 601860.9,
-      "North America": 6514510.2,
-      "South Asia": 1433691.6,
-      "Sub-Saharan Africa": 14232870.2
+      "Low Income": 30.1791187304951,
+      "Lower middle income":27.3092983264334,
+      "Middle income":32.6925691994107,
+      "Upper middle income":34.8352506141656,
+      "High income":28.5107519044698
     },
     {
       "Year": 1999,
-      "East Asia & Pacific": 6495184.4,
-      "Europe & Central Asia": 3164732.7,
-      "Latin America & Caribbean": 8133204.3,
-      "Middle East & North Africa": 598158.1,
-      "North America": 6515118.1,
-      "South Asia": 1429320.3,
-      "Sub-Saharan Africa": 14203920.3
+      "Low Income": 30.0015596857043,
+      "Lower middle income":27.1362854515389,
+      "Middle income":32.6180062744056,
+      "Upper middle income":34.7996162119851,
+      "High income":28.53775322429
     },
     {
       "Year": 2000,
-      "East Asia & Pacific":6491584.1,
-      "Europe & Central Asia": 3170652.6,
-      "Latin America & Caribbean": 8094528.5,
-      "Middle East & North Africa": 594455.2,
-      "North America": 6515726,
-      "South Asia": 1424949,
-      "Sub-Saharan Africa": 14174970.1
+      "Low Income": 29.8232205643553,
+      "Lower middle income":26.980091975574,
+      "Middle income":32.5548354219666,
+      "Upper middle income":34.7723554721148,
+      "High income":28.5575509542735
     },
     {
       "Year": 2001,
-      "East Asia & Pacific": 6514608.3,
-      "Europe & Central Asia":3171694.2,
-      "Latin America & Caribbean": 8051865.5,
-      "Middle East & North Africa": 594989.8,
-      "North America": 6517708.8,
-      "South Asia": 1424646.3,
-      "Sub-Saharan Africa": 14145630
+      "Low Income": 29.6566741031911,
+      "Lower middle income":26.9165071100612,
+      "Middle income":32.5215936489727,
+      "Upper middle income":34.7512212007722,
+      "High income":28.5688836926804
     },
     {
       "Year": 2002,
-      "East Asia & Pacific": 6537632.6,
-      "Europe & Central Asia": 3172735.7,
-      "Latin America & Caribbean": 8009202.4,
-      "Middle East & North Africa": 595524.5,
-      "North America": 6519691.6,
-      "South Asia": 1424343.6,
-      "Sub-Saharan Africa": 14116289.8
+      "Low Income": 29.4901276420269,
+      "Lower middle income":26.8535957036203,
+      "Middle income":32.4890904424981,
+      "Upper middle income":34.7308445670399,
+      "High income":28.5795746553535
     },
     {
       "Year": 2003,
-      "East Asia & Pacific": 6560657.1,
-      "Europe & Central Asia": 3173777.2,
-      "Latin America & Caribbean": 7966539.5,
-      "Middle East & North Africa": 596059,
-      "North America": 6521674.4,
-      "South Asia": 1424040.9,
-      "Sub-Saharan Africa": 14086949.6
+      "Low Income": 29.3235811808627,
+      "Lower middle income":26.7908313441702,
+      "Middle income":32.4557149310301,
+      "Upper middle income":34.709088330551,
+      "High income":28.5903418387292
     },
     {
       "Year": 2004,
-      "East Asia & Pacific": 6583681.4,
-      "Europe & Central Asia": 3174818.8,
-      "Latin America & Caribbean": 7923876.4,
-      "Middle East & North Africa": 596593.7,
-      "North America": 6523657.2,
-      "South Asia": 1423738.2,
-      "Sub-Saharan Africa": 14057609.4
+      "Low Income": 29.1570347196985,
+      "Lower middle income":26.7293721597116,
+      "Middle income":32.4227043994679,
+      "Upper middle income":34.6872030824301,
+      "High income":28.6016887172942
     },
     {
       "Year": 2005,
-      "East Asia & Pacific": 6606705.6,
-      "Europe & Central Asia": 3175860.4,
-      "Latin America & Caribbean": 7881213.5,
-      "Middle East & North Africa": 597128.3,
-      "North America": 6525640,
-      "South Asia": 1423435.5,
-      "Sub-Saharan Africa": 14028269.2
+      "Low Income": 28.9904882585343,
+      "Lower middle income":26.6658254274344,
+      "Middle income":32.3890910261577,
+      "Upper middle income":34.6654923501474,
+      "High income":28.6129076928139
     },
     {
       "Year": 2006,
-      "East Asia & Pacific": 6606732.4,
-      "Europe & Central Asia": 3179092.8,
-      "Latin America & Caribbean": 7851364.7,
-      "Middle East & North Africa": 595713.1,
-      "North America": 6533010.8,
-      "South Asia": 1426442.8,
-      "Sub-Saharan Africa": 14011808.8
+      "Low Income": 28.8181874773891,
+      "Lower middle income":26.5875085986665,
+      "Middle income":32.3721007503705,
+      "Upper middle income":34.6730526058724,
+      "High income":28.6246107006006
     },
     {
       "Year": 2007,
-      "East Asia & Pacific": 6606758.9,
-      "Europe & Central Asia": 3182325.1,
-      "Latin America & Caribbean": 7821515.9,
-      "Middle East & North Africa": 594298,
-      "North America": 6540381.6,
-      "South Asia": 1429450,
-      "Sub-Saharan Africa": 13995348.4
+      "Low Income": 28.6458866962439,
+      "Lower middle income":26.5093302297161,
+      "Middle income":32.3538379251615,
+      "Upper middle income":34.6786378815854,
+      "High income":28.6357208304477
     },
     {
       "Year": 2008,
-      "East Asia & Pacific": 6606785.6,
-      "Europe & Central Asia": 3185557.7,
-      "Latin America & Caribbean": 7791667.3,
-      "Middle East & North Africa": 592882.8,
-      "North America": 6547752.4,
-      "South Asia": 1432457.3,
-      "Sub-Saharan Africa": 13978888
+      "Low Income": 28.4735859150987,
+      "Lower middle income":26.4314371341959,
+      "Middle income":32.3358947685694,
+      "Upper middle income":34.6845537911697,
+      "High income":28.6591552536495
     },
     {
       "Year": 2009,
-      "East Asia & Pacific":6606812.3,
-      "Europe & Central Asia": 3188790,
-      "Latin America & Caribbean": 7761818.5,
-      "Middle East & North Africa": 591467.7,
-      "North America": 6555123.2,
-      "South Asia": 1435464.6,
-      "Sub-Saharan Africa": 13962427.6
+      "Low Income": 28.3012851339535,
+      "Lower middle income":26.3526894479682,
+      "Middle income":32.3185165365589,
+      "Upper middle income":34.691765060474,
+      "High income":28.6696421916436
     },
     {
       "Year": 2010,
-      "East Asia & Pacific": 6606839,
-      "Europe & Central Asia": 3192022.3,
-      "Latin America & Caribbean": 7731969.8,
-      "Middle East & North Africa": 590052.6,
-      "North America": 6562494,
-      "South Asia": 1438471.9,
-      "Sub-Saharan Africa": 13945967.2
+      "Low Income": 28.127491927379,
+      "Lower middle income":26.2746487584461,
+      "Middle income":32.3001365710212,
+      "Upper middle income":34.697104950646,
+      "High income":28.6795851009204
     },
     {
       "Year": 2011,
-      "East Asia & Pacific": 6616749.7,
-      "Europe & Central Asia": 3193766.3,
-      "Latin America & Caribbean": 7716149,
-      "Middle East & North Africa": 587718.4,
-      "North America": 6564794.2,
-      "South Asia": 1434781.2,
-      "Sub-Saharan Africa": 13849245
+      "Low Income": 27.9817782047458,
+      "Lower middle income":25.8676119709878,
+      "Middle income":32.1810193885853,
+      "Upper middle income":34.6925028864641,
+      "High income":28.7126189925979
     },
     {
       "Year": 2012,
-      "East Asia & Pacific": 6626660.2,
-      "Europe & Central Asia": 3195510.4,
-      "Latin America & Caribbean": 7700328.3,
-      "Middle East & North Africa": 585384.2,
-      "North America": 6567094.3,
-      "South Asia": 1431090.5,
-      "Sub-Saharan Africa": 13824092.9
+      "Low Income": 27.8366004554104,
+      "Lower middle income":25.769979918104,
+      "Middle income":32.1504119066363,
+      "Upper middle income":34.688568233242,
+      "High income":28.7477532622073
     },
     {
       "Year": 2013,
-      "East Asia & Pacific": 6636570.8,
-      "Europe & Central Asia": 3197254.4,
-      "Latin America & Caribbean": 7684507.6,
-      "Middle East & North Africa": 583050,
-      "North America": 6569394.5,
-      "South Asia": 1427399.8,
-      "Sub-Saharan Africa": 13798940.8
+      "Low Income": 27.6914123597271,
+      "Lower middle income":25.6722584635767,
+      "Middle income":32.1204258182355,
+      "Upper middle income":34.6856197402746,
+      "High income":28.7802200740709
     },
     {
       "Year": 2014,
-      "East Asia & Pacific": 6646481.5,
-      "Europe & Central Asia": 3198998.5,
-      "Latin America & Caribbean": 7668686.9,
-      "Middle East & North Africa": 580715.8,
-      "North America": 6571694.6,
-      "South Asia": 1423709.1,
-      "Sub-Saharan Africa": 13773788.5
+      "Low Income": 27.5462346646345,
+      "Lower middle income":25.5758224255376,
+      "Middle income":32.0900792361784,
+      "Upper middle income":34.6814352295765,
+      "High income":28.8131047801335
     },
     {
       "Year": 2015,
-      "East Asia & Pacific": 6656392.1,
-      "Europe & Central Asia": 3200742.5,
-      "Latin America & Caribbean": 7652866.2,
-      "Middle East & North Africa": 578381.6,
-      "North America": 6573994.8,
-      "South Asia": 1420018.3,
-      "Sub-Saharan Africa":13748636.4
+      "Low Income": 27.4010569695419,
+      "Lower middle income":25.4780397384782,
+      "Middle income":32.0591956356257,
+      "Upper middle income":34.6771639278341,
+      "High income":28.845934648023
     }
   ]
 }
-

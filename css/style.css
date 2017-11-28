@@ -28,7 +28,7 @@ h3 {
     color: #00897B;
 }
 
-p {
+p, ol {
     color: grey;
     font-size: 18px
 }
@@ -631,7 +631,7 @@ table {
 
 
 .area {
-    opacity: 0.7;
+    opacity: 0.5;
     clip-path: url(#clip);
 }
 .area:hover {
