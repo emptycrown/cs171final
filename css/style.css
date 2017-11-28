@@ -324,7 +324,7 @@ progress::-webkit-progress-bar {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
 }
 
-.section:nth-child(4n) {
+.section:nth-child(4n-1) {
     background: none;
 }
 
