@@ -12,7 +12,7 @@ OrderedVis.prototype.initVis = function() {
 
     var margin = {top:50, right:50, bottom:120, left:50};
 
-    var width = 700 - margin.left - margin.right,
+    var width = 650 - margin.left - margin.right,
         height = 450 - margin.top - margin.bottom;
 
     var allData = [];

@@ -50,7 +50,7 @@ TreeGrid.prototype.initVis = function(){
 
     dateSlider.noUiSlider.on('update', function( values, handle ){
       var year = values[handle];
-      var frac = (vis.displayData[year] - vis.displayData[2015]) / (vis.displayData[1990] - vis.displayData[2015]) + 0.4;
+      var frac = (vis.displayData[year] - vis.displayData[2015])*0.55 / (vis.displayData[1990] - vis.displayData[2015]) + 0.45;
       vis.updateVis(frac);
     });
 
