@@ -152,8 +152,13 @@ queue()
             d.Rate = +d.Rate || 0;
             d.Region = d.Region || 0;
         });
+
+    //Scatter plot
     scatterdata = all;
     createScatter();
+
+    //Tree grid
+    var treeGrid = new TreeGrid("slider", all);
 });
 
 

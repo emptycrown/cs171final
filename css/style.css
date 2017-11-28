@@ -559,6 +559,10 @@ tr, th {
     text-anchor: middle;
 }
 
+#trees {
+    margin-top: 32px;
+}
+
 .txtRate {
     font-size: 10px;
 }
