@@ -87,7 +87,7 @@ TreeGrid.prototype.updateVis = function(frac){
 
     $("#trees").empty();
 
-    var n = 70;
+    var n = 65;
     for(var i=0; i<n; i++) {
       if(i < Math.floor(frac * n)) {
         $("#trees").append(
