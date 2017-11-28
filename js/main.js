@@ -65,3 +65,4 @@ $(document).keydown(function(e) {
 
 //initialize visualizations
 var youDrawItVis = new youDrawItVis("youDrawItvis", "data/zaatari-refugee-camp-population.csv");
+var orderedVis = new OrderedVis("Orderedvis", "data/country_rates.csv");
