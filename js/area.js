@@ -11,9 +11,6 @@ StackedAreaChart = function(_parentElement, _data){
     this.data = _data;
     this.displayData = []; // see data wrangling
 
-    // DEBUG RAW DATA
-    console.log(this.data);
-
     this.initVis();
 };
 
@@ -47,6 +44,7 @@ StackedAreaChart.prototype.initVis = function(){
         .domain(d3.extent(vis.data, function(d) { return d.Year; }));
 
     vis.y = d3.scaleLinear()
+        .domain([-0.15, 0.05])
         .range([vis.height, 0]);
 
     vis.xAxis = d3.axisBottom()
@@ -55,30 +53,25 @@ StackedAreaChart.prototype.initVis = function(){
     vis.yAxis = d3.axisLeft()
         .scale(vis.y);
 
-    vis.svg.append("g")
+   vis.xaxis_group =  vis.svg.append("g")
         .attr("class", "x-axis axis")
-        .attr("transform", "translate(0," + vis.height + ")");
+        .attr("transform", "translate(0," + vis.height + ")")
+
+    vis.yaxis_group =  vis.svg.append("g")
+        .attr("class", "axis y-axis")
+        .attr("transform", "translate(0,0)");
+
+    vis.yaxis_group
+        .append("text")
+        .attr("transform", "translate(" + -vis.margin.left*2/3 + "," + vis.height/4 +") rotate(-90)")
+        .text("Forest Growth since 1990 (%)")
+        .attr("stroke", "black");
 
     vis.svg.append("g")
         .attr("class", "y-axis axis");
 
-
     // TO-DO: Initialize stack layout
     var dataCategories = colorScale.domain();
-
-    var stack = d3.stack()
-        .keys(dataCategories);
-
-    vis.stackedData = stack(vis.data);
-
-    // TO-DO: Rearrange data
-
-    // TO-DO: Stacked area layout
-    vis.area = d3.area()
-        .curve(d3.curveCardinal)
-        .x(function(d) { return vis.x(d.data.Year); })
-        .y0(function(d) { return vis.y(d[0]); })
-        .y1(function(d) { return vis.y(d[1]); });
 
     // TO-DO: Tooltip placeholder
     vis.svg.append("text")
@@ -107,12 +100,19 @@ StackedAreaChart.prototype.wrangleData = function(){
     var vis = this;
 
     // In the first step no data wrangling/filtering needed
-    vis.displayData = vis.stackedData;
-
+    var vals = ["Low Income", "Lower middle income", "Middle income", "Upper middle income", "High income"];
+    vis.displayData = [];
+    for(var i=0; i<vals.length; i++) {
+        var v = vals[i];
+        vis.displayData.push(this.data.map(function(d) {
+            var obj = {Year: d.Year};
+            obj.value = d[v];
+            return obj;
+        }));
+    }
     // Update the visualization
     vis.updateVis();
 };
-
 
 
 /*
@@ -125,39 +125,49 @@ StackedAreaChart.prototype.updateVis = function(){
 
     // Update domain
     // Get the maximum of the multi-dimensional array or in other words, get the highest peak of the uppermost layer
-    vis.y.domain([0, d3.max(vis.displayData, function(d) {
-        return d3.max(d, function(e) {
-            return e[1];
-        });
-    })
-    ]);
+    // vis.y.domain([0, d3.max(vis.displayData, function(d) {
+    //     return d3.max(d, function(e) {
+    //         return e[1];
+    //     });
+    // })
+    // ]);
+
+
+
+    vis.line = d3.line()
+        .x(function(d) {return vis.x(d.Year); })
+        .y(function(d) {return vis.y(d.value); })
+        .curve(d3.curveLinear);
 
     var dataCategories = colorScale.domain();
 
 // Draw the layers
-    var categories = vis.svg.selectAll(".area")
-        .data(vis.displayData);
+    vis.svg.selectAll(".category").remove();
 
-    categories.enter().append("path")
-        .attr("class", "area")
-        .merge(categories)
-        .style("fill", function(d,i) {
+    var categories = vis.svg.selectAll(".category")
+        .data(vis.displayData)
+        .enter()
+        .append("g")
+        .attr("class", "category");
+
+    categories.append("path")
+        .attr("class", "line")
+        .attr("d", function(d){return vis.line(d)})
+        .attr("stroke", function(d,i) {
             return colorScale(dataCategories[i]);
         })
-        .attr("d", function(d) {
-            return vis.area(d);
-        })
-        .on("mouseover", function(d) {
-            d3.select(".mytooltip").text(d.key)
+        .style("stroke-width", 5)
+        .attr("fill", "none")
+        .on("mouseover", function(d,i) {
+            d3.select(".mytooltip").text(dataCategories[i])
         });
-
 
     // TO-DO: Update tooltip text
 
     categories.exit().remove();
 
-
     // Call axis functions with the new domain
     vis.svg.select(".x-axis").call(vis.xAxis);
     vis.svg.select(".y-axis").call(vis.yAxis);
 };
+

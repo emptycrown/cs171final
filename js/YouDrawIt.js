@@ -27,7 +27,6 @@ youDrawItVis.prototype.initVis = function() {
             d.date = parseTime(d.date);
             d.population = +d.population;
         });
-        console.log(data);
 
         var maxDate = d3.max(data, function (d) {
             return d.date;
@@ -259,7 +258,7 @@ youDrawItVis.prototype.initVis = function() {
             .call(yAxis);
 
         vis.svg.append("text")
-            .text("Global Deforestation")
+            .text("Global Forest Acreage")
             .attr("class", "youdrawit-title")
             .attr("x", width / 2)
             .attr("y", 0);

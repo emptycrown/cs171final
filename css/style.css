@@ -632,11 +632,11 @@ table {
 
 
 
-.area {
+.line {
     opacity: 0.5;
     clip-path: url(#clip);
 }
-.area:hover {
+.line:hover {
     opacity: 1;
 }
 
@@ -648,4 +648,8 @@ table {
 
 .game {
     height: 500px;
+}
+
+.button {
+    height: 16px;
 }

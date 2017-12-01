@@ -156,7 +156,7 @@ scatter.prototype.initVis = function() {
         yaxis_group
             .append("text")
             .attr("transform", "translate(" + -vis.margin.left/2 + "," + (vis.height-vis.padding)/3 +") rotate(-90)")
-            .text("% Change in Deforestation since 1990")
+            .text("Forest Growth since 1990 (%)")
             .attr("stroke", "black");
 
     }

@@ -188,6 +188,8 @@ function brushed() {
     // Convert the extent into the corresponding domain values
     var selectionDomain = selectionRange.map(timeline.x.invert);
 
+    console.log(selectionDomain)
+
     areachart.x.domain(selectionDomain);
     areachart.wrangleData();
 
