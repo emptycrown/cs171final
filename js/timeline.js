@@ -23,10 +23,10 @@ Timeline = function(_parentElement, _data){
 Timeline.prototype.initVis = function(){
     var vis = this; // read about the this
 
-    vis.margin = {top: 0, right: 0, bottom: 30, left: 60};
+    vis.margin = {top: 0, right: 0, bottom: 55, left: 60};
 
     vis.width = 900 - vis.margin.left - vis.margin.right;
-    vis.height = 75 - vis.margin.top - vis.margin.bottom;
+    vis.height = 100 - vis.margin.top - vis.margin.bottom;
 
     // SVG drawing area
     vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -47,6 +47,18 @@ Timeline.prototype.initVis = function(){
 
     vis.xAxis = d3.axisBottom()
         .scale(vis.x);
+
+    vis.xaxis_group =  vis.svg.append("g")
+        .attr("class", "x-axis axis")
+        .attr("transform", "translate(0," + vis.height + ")");
+
+    vis.xaxis_group
+        .append("text")
+        .attr("x", (vis.width/2))
+        .attr("y", vis.margin.bottom*2/3)
+        .text("Year")
+        .style("font-size", 11)
+        .attr("stroke", "black");
 
     // SVG area path generator
     vis.area = d3.area()

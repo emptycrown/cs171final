@@ -6,7 +6,8 @@ color = d3.scaleOrdinal(d3.schemeDark2);
 collision_targets = [base_circle];
 //enemies = [];
 threshold = 50;
-pause_text = "Game Paused Press Space to Start";
+start_text = "Press Space to Start";
+pause_text = "Game Over, Refresh Page to Restart";
 pattern_interval = 4000;
 
 var enemyGeneration = -1;
@@ -235,7 +236,7 @@ function lossGame(){
     game_status.state = 3;
     pauseGame();
     svg.select("#state_indicator")
-        .text("You lost game, press space to start again");
+        .text("You lost the game.");
 }
 
 function resumeGame(){
@@ -481,7 +482,7 @@ function setup(){
         .attr("font-size", "20px")
         .attr("fill","white")
         .attr("text-anchor","middle")
-        .text(pause_text);
+        .text(start_text);
 
     //inner buf indicator
     inArc.endAngle(0);
