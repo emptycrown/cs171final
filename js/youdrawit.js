@@ -133,15 +133,15 @@ youDrawItVis.prototype.initVis = function() {
             .on("mouseup", decrement)
             .on("mouseout", decrement);
 
-        d3.select("body").select("#" + vis.parentElement).append("div")
-            .attr("width", 70)
-            .attr("height", 40)
-            .attr("class", "done-button-container")
-            .html("<i class='fa fa-check'></i>")
-            .on("click", showCorrect);
+        // d3.select("body").select("#" + vis.parentElement).append("div")
+        //     .attr("width", 70)
+        //     .attr("height", 40)
+        //     .attr("class", "done-button-container")
+        //     .html("<i class='fa fa-check'></i>")
+        //     .on("click", showCorrect);
 
 
-        
+        $("#done-button").click(showCorrect);
 
         function showCorrect() {
             vis.svg.append("path")

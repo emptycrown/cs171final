@@ -10,7 +10,7 @@ OrderedVis.prototype.initVis = function() {
 
     var vis = this;
 
-    var margin = {top:50, right:50, bottom:120, left:50};
+    var margin = {top:80, right:50, bottom:120, left:50};
 
     var width = 650 - margin.left - margin.right,
         height = 450 - margin.top - margin.bottom;
@@ -90,14 +90,16 @@ OrderedVis.prototype.initVis = function() {
 
         focus.append("line")
             .attr("class", "x")
-            .style("stroke", "grey")
+            .style("stroke", "white")
             .attr("y1", 0)
             .attr("y2", height);
 
         focus.append("text")
+            .attr("fill", "white")
             .attr("class", "txt");
 
         focus.append("text")
+            .attr("fill", "white")
             .attr("class", "txtRate");
 
         svg.append("rect")
@@ -145,7 +147,7 @@ OrderedVis.prototype.initVis = function() {
             .ticks(0);
 
         svg.append("g")
-            .attr("class", "axis x-axis")
+            .attr("class", "axis x-axis axis-white")
             .attr("transform", "translate(0," + height / 2 + ")")
             .call(xAxis)
             .selectAll("text")
@@ -159,15 +161,16 @@ OrderedVis.prototype.initVis = function() {
             .tickFormat(d3.format(".0%"));
 
         svg.append("g")
-            .attr("class", "axis y-axis")
+            .attr("class", "axis y-axis axis-white")
             .attr("transform", "translate(0"  + ", 0)")
             .call(yAxis);
 
         svg.append("text")
             .text("Forest Area Change (2000-2015)")
-            .attr("class", "title")
+            .attr("class", "ordered-title")
+            .attr("stroke", "white")
             .attr("x", width / 2)
-            .attr("y", 0);
+            .attr("y", -20);
     });
 
 }

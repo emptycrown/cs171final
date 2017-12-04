@@ -56,6 +56,12 @@ $(document).ready(function() {
     $('select').material_select();
 });
 
+$("#enter-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#section1").offset().top
+    }, 500);
+});
+
 
 AOS.init({
     duration: 1200,
@@ -66,6 +72,29 @@ $(document).keydown(function(e) {
         return false;
     }
 });
+
+//animate panimated panes
+var container = document.getElementById('section7');
+var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
+var scrollArea = 1000 - windowHeight;
+var panelLeft = document.getElementsByClassName('animated-panel')[0];
+var panelRight = document.getElementsByClassName('animated-panel')[1];
+var panelCenter = document.getElementsByClassName('animated-panel')[2];
+
+// update position of square 1 and square 2 when scroll event fires.
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = 1 - Math.min(Math.max(container.getBoundingClientRect().top, 0), windowHeight) / windowHeight;
+  
+  panelLeft.style.left = -window.innerWidth*0.3 + scrollPercent*window.innerWidth*0.4 + 'px';
+  panelRight.style.right = -window.innerWidth*0.3 + scrollPercent*window.innerWidth*0.4 + 'px';
+});
+
+
+
+
+
 
 
 //initialize visualizations
@@ -158,12 +187,13 @@ queue()
             d.Region = d.Region || 0;
         });
 
+    //Tree grid
+    var treeGrid = new TreeGrid("slider", all);
     //Scatter plot
     scatterdata = all;
     createScatter();
 
-    //Tree grid
-    var treeGrid = new TreeGrid("slider", all);
+    
 });
 
 

@@ -17,7 +17,7 @@ scatter.prototype.initVis = function() {
 
     vis.padding = 20;
 
-
+    $("#icon-select").material_select(updateVis);
     vis.svg = d3.select("#icons").append("svg")
         .attr("width", vis.width + vis.margin.left + vis.margin.right)
         .attr("height", vis.height + vis.margin.top + vis.margin.bottom)
@@ -160,6 +160,4 @@ scatter.prototype.initVis = function() {
             .attr("stroke", "black");
 
     }
-
-    $("#icon-select").material_select(updateVis);
 }

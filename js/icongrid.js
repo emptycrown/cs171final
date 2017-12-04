@@ -58,7 +58,21 @@ TreeGrid.prototype.initVis = function(){
     for(var year=1990; year<=2015; year++) {
       vis.displayData[year] = vis.data.map(function(d) {return d[year]}).reduce(function(a,b) {return a+b}, 0);
     }
-    console.log(vis.displayData);
+    
+    $("#play-icongrid").click(playVis);
+
+    function playVis() {
+      var id = window.setInterval(moveSlider, 200);
+      var yr = 1990;
+      function moveSlider() {
+        if(yr == 2015) {
+          window.clearInterval(id);
+        } else {
+          dateSlider.noUiSlider.set(yr);
+          yr++;
+        }
+      }
+    }
 
     vis.wrangleData();
 };
@@ -87,7 +101,7 @@ TreeGrid.prototype.updateVis = function(frac){
 
     $("#trees").empty();
 
-    var n = 65;
+    var n = 60;
     for(var i=0; i<n; i++) {
       if(i < Math.floor(frac * n)) {
         $("#trees").append(
@@ -101,4 +115,5 @@ TreeGrid.prototype.updateVis = function(frac){
       
     }
 };
-  
+
+
