@@ -43,17 +43,21 @@ var control_status ={
 
 //----------------------------------------------------------------------------
 
+var sector_angles = [0, 165, 285, 360];
+
+
 var arc = d3.arc()
     .innerRadius(20)
     .outerRadius(70)
-    .startAngle(function(d){ return (d + game_status.base_rotation) * (Math.PI/180)}) //converting from degs to radians
-    .endAngle(function(d){ return (d + game_status.base_rotation + 120) * (Math.PI/180)})
+    .startAngle(function(d,i){ return (sector_angles[i] + game_status.base_rotation) * (Math.PI/180)}) //converting from degs to radians
+    .endAngle(function(d,i){ return (sector_angles[i+1] + game_status.base_rotation) * (Math.PI/180)})
+
 
 var innerArc = d3.arc()
     .innerRadius(20)
     .outerRadius(function(d){ return d/100 * 50 + 20;})
-    .startAngle(function(d,i){ return (i*120 + game_status.base_rotation) * (Math.PI/180)}) //converting from degs to radians
-    .endAngle(function(d,i){ return (i*120 + game_status.base_rotation + 120) * (Math.PI/180)})
+    .startAngle(function(d,i){ return (sector_angles[i] + game_status.base_rotation) * (Math.PI/180)}) //converting from degs to radians
+    .endAngle(function(d,i){ return (sector_angles[i+1] + game_status.base_rotation) * (Math.PI/180)})
 
 var inArc = d3.arc()
     .innerRadius(0)
@@ -310,22 +314,22 @@ function updateHealth(d){
 
 function getColideSection(hit_angle){
     var b = game_status.base_rotation;
-    if(hit_angle >= b && hit_angle < b + 120){
+    if(hit_angle >= b && hit_angle < b + sector_angles[1]){
         return 0;
     }
-    else if(hit_angle >= b+120 && hit_angle < b + 240 ){
+    else if(hit_angle >= b+sector_angles[1] && hit_angle < b + sector_angles[2] ){
         return 1;
     }
-    else if(hit_angle >= b+240 && hit_angle < b + 360 ){
+    else if(hit_angle >= b+sector_angles[2] && hit_angle < b + sector_angles[3] ){
         return 2;
     }
-    else if(hit_angle <= b && hit_angle > b - 120 ){
+    else if(hit_angle <= b && hit_angle > b - sector_angles[1] ){
         return 2;
     }
-    else if(hit_angle <= b-120 && hit_angle > b - 240 ){
+    else if(hit_angle <= b-sector_angles[1] && hit_angle > b - sector_angles[2] ){
         return 1;
     }
-    else if(hit_angle <= b-240 && hit_angle > b - 360 ){
+    else if(hit_angle <= b-sector_angles[2] && hit_angle > b - sector_angles[3] ){
         return 0;
     }
 }
@@ -530,7 +534,7 @@ function setup(){
         });
 
     //data is offsets
-    svg.selectAll(".arcs").data([0,120,240]).enter().append("path")
+    svg.selectAll(".arcs").data(sector_angles.slice(0,3)).enter().append("path")
         .attr("class","arcs")
         .attr("d", arc)
         .attr("transform", "translate("+ base_circle.x +","+ base_circle.y +")")

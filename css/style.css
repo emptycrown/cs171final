@@ -693,6 +693,10 @@ tr:nth-child(even) {
 
 html,body { height: 100%; margin: 0px; padding: 0px; }
 
+body {
+    overflow-x: hidden;
+}
+
 #titlepage {
     width: 100%;
     height: 90%;

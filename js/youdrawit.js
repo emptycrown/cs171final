@@ -103,7 +103,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(displayData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "#00897B")
+            .attr("stroke", "#00C853")
             .attr("fill", "none")
             .attr("id", "display");
 
@@ -111,7 +111,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(drawData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "blue")
+            .attr("stroke", "#00BFA5")
             .attr("fill", "none")
             .attr("id", "user")
             .attr("stroke-dasharray", "5 2");
@@ -148,7 +148,7 @@ youDrawItVis.prototype.initVis = function() {
                 .datum(vis.correctData)
                 .attr("d", vis.line)
                 .attr("stroke-width", 2)
-                .attr("stroke", "#F4511E")
+                .attr("stroke", "#FF1744")
                 .attr("fill", "none")
                 .attr("id", "correct");
         }
