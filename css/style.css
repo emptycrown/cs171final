@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Raleway';
     font-weight: 700;
     margin-bottom: 42px;
@@ -28,7 +28,7 @@ h3 {
 
 p, ol {
     color: grey;
-    font-size: 18px
+    font-size: 16px
 }
 
 ul {
@@ -640,7 +640,7 @@ tr:nth-child(even) {
 #subtitle {
     color: #1DE9B6;
     font-family: 'Raleway';
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -711,7 +711,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 25%;
+  height: 30%;
   margin: 0 auto;
   z-index: 0;
 }
@@ -836,22 +836,22 @@ body {
     margin-top: -10px;
 }
 .panel>h3 {
-    font-size: 25px;
+    font-size: 23px;
 }
 .panel>p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .split-pane:nth-child(1) {
-    margin-top: 30px;
+    margin-top: -30px;
 }
 
 .split-pane:nth-child(2) {
-    margin-top: 0px;
+    margin-top: -60px;
 }
 
 .split-pane:nth-child(3) {
-    margin-top: -30px;
+    margin-top: -90px;
 }
 
 .white {
@@ -883,7 +883,7 @@ body {
 }
 #tree3 {
     position: absolute;
-    right: 24%;
+    right: 22%;
     bottom: 0px;
 }
 
@@ -892,18 +892,18 @@ body {
   margin: auto;
   display: block;
   margin-top: 8%;
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   background: none;
 }
 
 #tree2>.tree-box {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 #tree3>.tree-box {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
 }
 .tree-top{
   position: absolute;
@@ -952,7 +952,7 @@ body {
     background: #FAFAFA;
     position: absolute;
     width: 30%;
-    height: 500px;
+    height: 60%;
     border-radius: 3px;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
     padding: 32px;
@@ -961,12 +961,12 @@ body {
 .animated-left {
     left: -30%;
     top: 10%;
-    padding-right: 120px;
+    padding-right: 7%;
 }
 .animated-right {
     right: -30%;
     top: 10%;
-    padding-left: 120px;
+    padding-left: 7%;
 }
 .animated-center {
     top: 10%;
