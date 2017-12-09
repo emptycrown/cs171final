@@ -28,7 +28,7 @@ scatter.prototype.initVis = function() {
 
    function updateVis() {
 
-        vis.val = d3.select("#icon-select").property("value");
+        vis.val = 2015; //d3.select("#icon-select").property("value");
         vis.data.forEach(function(d){
             d[1989] = (d[vis.val] - d[1990]) / d[1990] || 0;
         });

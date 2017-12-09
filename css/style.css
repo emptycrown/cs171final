@@ -688,7 +688,7 @@ tr:nth-child(even) {
     width: 100%;
 
     position: relative;
-    bottom: 14%;
+    bottom: 15%;
     left:0;
 }
 
@@ -805,13 +805,16 @@ body {
     width: 250px;
     border-radius: 20px;
     transition: box-shadow .2s;
+    transition: 150ms ease all;
     background: #FEAC5E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D500F9, #FF9100);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #D500F9, #FF9100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .sexy-button:hover {
-    box-shadow: 0px 0px 50px rgba(255, 105, 135, .5);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .section-text {
