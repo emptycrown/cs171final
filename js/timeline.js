@@ -23,9 +23,9 @@ Timeline = function(_parentElement, _data){
 Timeline.prototype.initVis = function(){
     var vis = this; // read about the this
 
-    vis.margin = {top: 0, right: 0, bottom: 55, left: 60};
+    vis.margin = {top: 0, right: 150, bottom: 55, left: 60};
 
-    vis.width = 900 - vis.margin.left - vis.margin.right;
+    vis.width = 1000 - vis.margin.left - vis.margin.right;
     vis.height = 100 - vis.margin.top - vis.margin.bottom;
 
     // SVG drawing area

@@ -135,7 +135,7 @@ function loadData() {
             });
 
             allData.years.forEach(function(d){
-                d.Total = parseFloat(d.Total) - 100;
+                d.Total = parseFloat(d.Total) - 120;
                 d.Year = parseDate(d.Year.toString());
             });
 
@@ -193,7 +193,6 @@ queue()
     scatterdata = all;
     createScatter();
 
-    
 });
 
 

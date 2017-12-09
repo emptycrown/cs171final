@@ -254,11 +254,35 @@ youDrawItVis.prototype.initVis = function() {
             .attr("transform", "translate(0" + ", 0)")
             .call(yAxis);
 
+        var xaxis_group = vis.svg.append("g");
+        var yaxis_group = vis.svg.append("g");
+
+        xaxis_group
+            .append("text")
+            .attr("x", (width/2))
+            .attr("y", height + margin.bottom/2)
+            .style("font-size", 12)
+            .text("Year")
+            .attr("stroke", "black");
+
+        yaxis_group
+            .append("text")
+            .attr("transform", "translate(" + -margin.left*3/4 + "," + height*3/4 +") rotate(-90)")
+            .text("Forest Area (Millions of Acres)")
+            .style("font-size", 12)
+            .attr("stroke", "black");
+
         vis.svg.append("text")
             .text("World Aggregate Forest Area")
             .attr("class", "youdrawit-title")
             .attr("x", width / 2)
             .attr("y", 0);
+
+        vis.svg.append("text")
+            .text("Draw Here!")
+            .attr("class", "youdrawit-subtitle")
+            .attr("x", width*5/12)
+            .attr("y", 40);
 
     });
 

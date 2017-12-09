@@ -116,17 +116,6 @@ StackedAreaChart.prototype.wrangleData = function(){
 StackedAreaChart.prototype.updateVis = function(){
     var vis = this;
 
-    // Update domain
-    // Get the maximum of the multi-dimensional array or in other words, get the highest peak of the uppermost layer
-    // vis.y.domain([0, d3.max(vis.displayData, function(d) {
-    //     return d3.max(d, function(e) {
-    //         return e[1];
-    //     });
-    // })
-    // ]);
-
-
-
     vis.line = d3.line()
         .x(function(d) {return vis.x(d.Year); })
         .y(function(d) {return vis.y(d.value); })
@@ -144,15 +133,15 @@ StackedAreaChart.prototype.updateVis = function(){
         .attr("class", "category");
 
     // TO-DO: Tooltip placeholder
-    var tooltip_text = vis.svg.selectAll("text")
+    var tooltip_text = vis.svg.selectAll(".mytooltip")
         .data(vis.displayData);
 
     tooltip_text.enter()
         .append("text")
         .attr("class", "mytooltip")
-        .attr('x', vis.width)
+        .attr("id", function(d,i) {return "mytooltip"+i})
+        .attr('x', vis.width + vis.margin.left/10)
         .attr('y', function(d,i) {
-            console.log(d);
             return vis.y(d[25].value)
         })
         .attr("stroke", "gray")
@@ -169,7 +158,12 @@ StackedAreaChart.prototype.updateVis = function(){
         .style("stroke-width", 5)
         .attr("fill", "none")
         .on("mouseover", function(d,i) {
-            d3.select(".mytooltip").attr("stroke", "black");
+            d3.select("#mytooltip"+i).attr("stroke", "black")
+                .style("stroke-width", 1.5);
+        })
+        .on("mouseleave", function(d,i) {
+            d3.select("#mytooltip"+i).attr("stroke", "gray")
+                .style("stroke-width", 1);
         });
 
     // TO-DO: Update tooltip text

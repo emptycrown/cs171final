@@ -24,10 +24,28 @@ scatter.prototype.initVis = function() {
         .append("g")
         .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
+    vis.filteredData = vis.data;
+
     updateVis();
 
    function updateVis() {
-        vis.val = 2015; //d3.select("#icon-select").property("value");
+        vis.val = 2015;
+
+       const region2id = {
+           "East Asia & Pacific": "EArow",
+           "Sub-Saharan Africa": "SSArow",
+           "Middle East & North Africa": "MErow",
+           "Europe & Central Asia": "EURrow",
+           "Latin America & Caribbean": "LArow",
+           "North America": "NArow",
+           "South Asia": "SArow"
+       };
+       for(var region in region2id) {
+           $("#"+region2id[region]).removeClass("selected");
+       }
+       if(vis.regionFilter) {
+           $("#"+region2id[vis.regionFilter]).addClass("selected");
+       }
 
         vis.data.forEach(function(d){
             d[1989] = (d[vis.val] - d[1990]) / d[1990] || 0;
@@ -96,8 +114,10 @@ scatter.prototype.initVis = function() {
 
         vis.svg.call(vis.tooltip);
 
+       vis.svg.selectAll("circle").remove();
+
         vis.circles = vis.svg.selectAll("circle")
-            .data(vis.data);
+            .data(vis.filteredData);
 
         vis.circles.enter()
             .append("circle")
@@ -108,13 +128,16 @@ scatter.prototype.initVis = function() {
             .attr("cx", function(d){
                 return GDPscale(d.GDP);
             })
+            .style("display", function(d) {
+                return (!vis.regionFilter || d.Region == vis.regionFilter) ? "inline" : "none";
+            })
             .attr("cy", function(d){
                 return ratescale(d[1989]);
             })
             .attr("r", function(d){
                 return radiusScale(d.Population);
             })
-            .attr("stroke", "gray")
+            .attr("stroke", "black")
             .attr("fill", function(d){
                 return colorPalette(d.Region);
             })
@@ -156,8 +179,25 @@ scatter.prototype.initVis = function() {
         yaxis_group
             .append("text")
             .attr("transform", "translate(" + -vis.margin.left/2 + "," + (vis.height-vis.padding)/3 +") rotate(-90)")
-            .text("% Forest Growth (2015 - 1990)")
+            .text("% Forest Growth (1990 - 2015)")
             .attr("stroke", "black");
 
     }
+
+    function filterdataset(region) {
+        if(vis.regionFilter == region) {
+            vis.regionFilter = null;
+        } else {
+            vis.regionFilter = region;
+        }
+        updateVis();
+    };
+
+    document.getElementById("EArow").addEventListener("click", filterdataset.bind(null, "East Asia & Pacific"));
+    document.getElementById("SSArow").addEventListener("click", filterdataset.bind(null, "Sub-Saharan Africa"));
+    document.getElementById("MErow").addEventListener("click", filterdataset.bind(null, "Middle East & North Africa"));
+    document.getElementById("EURrow").addEventListener("click", filterdataset.bind(null, "Europe & Central Asia"));
+    document.getElementById("LArow").addEventListener("click", filterdataset.bind(null, "Latin America & Caribbean"));
+    document.getElementById("NArow").addEventListener("click", filterdataset.bind(null, "North America"));
+    document.getElementById("SArow").addEventListener("click", filterdataset.bind(null, "South Asia"));
 }

@@ -490,6 +490,11 @@ tr, th {
     font-family: 'Oxygen';
 }
 
+.youdrawit-subtitle {
+    font-size: 14px;
+    color: gray;
+}
+
 .txt {
     font-weight: bold;
     font-size: 18px;
@@ -565,44 +570,53 @@ tr, th {
 table {
     font-size: 10px;
     margin-left: -70px;
+    cursor: pointer;
 }
 
 tr:nth-child(even) {
-    background: #B2EBF2;
+    background: lightgray;
+}
+
+tr.selected {
+    background: lightseagreen;
+}
+
+tr:hover {
+    background: lightblue;
 }
 
 .SA, .LA, .EUR, .EA, .ME, .SSA, .NA {
     width: 20px;
     height: 20px;
-    border: solid 2px white;
+    border: solid 2px 0px 2px 0px black;
 }
 
 .SA {
-    background-color: #ff7f0e
-}
-
-.LA {
-    background-color: #8c564b
-}
-
-.EUR {
-    background-color: #d62728
-}
-
-.EA {
     background-color: #e377c2
 }
 
-.ME {
+.LA {
     background-color: #9467bd
 }
 
-.SSA {
+.EUR {
     background-color: #2ca02c
 }
 
-.NA {
+.EA {
+    background-color: #ff7f0e
+}
+
+.ME {
+    background-color: #d62728
+}
+
+.SSA {
     background-color: #7f7f7f
+}
+
+.NA {
+    background-color: #8c564b
 }
 
 
@@ -743,6 +757,7 @@ body {
     -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     padding-top: 15%;
+    height: 95%;
     position: relative;
 }
 
@@ -777,11 +792,19 @@ body {
     margin-top: -70px;
     position: absolute;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -150px;
 }
 
 #section6 {
     height: 90%;
+    position: relative;
+}
+
+.section6-trees {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -100px;
 }
 
 #section7 {
@@ -793,6 +816,11 @@ body {
 
 #section8 {
     background: #fff;
+}
+
+#section9{
+    height: 350px;
+    text-align: center;
 }
 
 .sexy-button {
@@ -831,7 +859,7 @@ body {
 
 .panel {
     background: #FAFAFA;
-    padding: 32px;
+    padding: 25px;
     height: 600px;
     transition: margin-top .3s;
 }

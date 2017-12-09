@@ -125,7 +125,7 @@
                     <h3>You Draw it</h3>
                     <p class="section-text">This interactive activity allows you to draw your prediction of the Earth's global forest acreage
                         looks like with your mouse cursor.
-                        You may edit your predictions by dragging the dotted blue line. Click the "Done" to reveal
+                        You may edit your predictions by dragging the dotted blue line. Click the "Show Actual" to reveal
                         an animation with the true statistics and compare your guess! </p>
                     <div class="sexy-button" id="done-button">Show Actual</div>
                 </div>
@@ -291,32 +291,32 @@
                 <!--Div for picture-->
                 <div class="col s3">
                     <table>
-                        <tr>
-                            <td class="SA"></td>
+                        <tr id="EArow">
+                            <td class="EA"></td>
                             <td>East Asia & Pacific</td>
                         </tr>
-                        <tr>
-                            <td class="NA"></td>
+                        <tr id="SSArow">
+                            <td class="SSA"></td>
                             <td>Sub-Saharan Africa</td>
                         </tr>
-                        <tr>
+                        <tr id="MErow">
                             <td class="ME"></td>
-                            <td>Middle East & Northern Africa</td>
+                            <td>Middle East & North Africa</td>
                         </tr>
-                        <tr>
-                            <td class="SSA"></td>
+                        <tr id="EURrow">
+                            <td class="EUR"></td>
                             <td>Europe & Central Asia</td>
                         </tr>
-                        <tr>
-                            <td class="EUR"></td>
+                        <tr id="LArow">
+                            <td class="LA"></td>
                             <td>Latin America & Caribbean</td>
                         </tr>
-                        <tr>
-                            <td class="LA"></td>
+                        <tr id="NArow">
+                            <td class="NA"></td>
                             <td>North America</td>
                         </tr>
-                        <tr>
-                            <td class="EA"></td>
+                        <tr id="SArow">
+                            <td class="SA"></td>
                             <td>South Asia</td>
                         </tr>
                     </table>
@@ -330,7 +330,7 @@
             <div class="row">
                 <div class="col s12">
                     <div class=" section-area-header">
-                        <h3>Forest Area by Socioeconomic Class</h3>
+                        <h3>Change in Forest Area by Socioeconomic Class</h3>
                     </div>
                     <div class="centering">
                         <div>
@@ -340,6 +340,47 @@
                     </div>
 
                 </div>
+            </div>
+            <div class=" section6-trees">
+                <img height="25" src="images/treepointy.png">
+                <img height="45" src="images/treeround.png">
+                <img height="80" src="images/treepointy.png">
+                <img height="70" src="images/treepointy.png">
+                <img height="90" src="images/treeround.png">
+                <img height="95" src="images/treepointy.png">
+                <img height="70" src="images/treeround.png">
+                <img height="50" src="images/treepointy.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="section8">
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col s6">
+                        <div id="section11">
+                            <h3>Game of Privilege</h3>
+                            <p>This game demonstrates the stark difference in bargaining power between countries with different GDPs.
+                                The areas are divided proportionally by three different socioeconomic classes.
+                                <br><br><b>Rules:</b>
+                            <ol>
+                                <li>Press "space" to start the game</li>
+                                <li>Use the arrow keys to move the spinner</li>
+                                <li>Match the same colored dots and segments</li>
+                                <li>Work toward a high score! The game ends after too many missed pieces. </li>
+                                <li>Refresh the page to restart.</li>
+                            </ol>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s6" id="section12">
+                        <div id="game">
+                            <div class="empty"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -394,38 +435,22 @@
         </div>
     </div>
 
-    <div class="section" id="section8">
+    <div class="section" id="section9">
         <div class="container">
             <div>
                 <div class="row">
-                    <div class="col s6">
-                        <div id="section11">
-                            <h3>Game of Privilege</h3>
-                            <p>This game demonstrates the stark difference in bargaining power between countries with different GDPs.
-                                The areas are divided proportionally by three different socioeconomic classes.
-                                <br><br><b>Rules:</b>
-                            <ol>
-                                    <li>Press "space" to start the game</li>
-                                    <li>Use the arrow keys to move the spinner</li>
-                                    <li>Match the same colored dots and segments</li>
-                                    <li>Work toward a high score! The game ends after too many missed pieces. </li>
-                                    <li>Refresh the page to restart.</li>
-                            </ol>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col s6" id="section12">
-                        <div id="game">
-                            <div class="empty"></div>
-                        </div>
-                    </div>
+                    <a href="https://docs.google.com/document/d/1KNDdeSRP9swkLOWXSvvorUP3uAQlPeYe0ysiOJT2V7Q/edit?usp=sharing">
+                        <h3>Read our Process Book!</h3>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1KNDdeSRP9swkLOWXSvvorUP3uAQlPeYe0ysiOJT2V7Q/edit?usp=sharing">
+                        <img height="100" src="images/treepointy.png">
+                    </a>
+                    <p>© December 2017</p>
                 </div>
 
             </div>
         </div>
     </div>
-
-    
 
 
     <progress value="0" id="progressBar">
@@ -454,9 +479,7 @@
     <script type="text/javascript" src="js/game.js"></script>
     
     <script type="text/javascript" src="js/main.js"></script>
-
     <script src="./js/client.dist.js"></script>
-
     <script src="./js/waves.js"></script>
 </body>
 </html>
