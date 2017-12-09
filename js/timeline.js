@@ -43,7 +43,7 @@ Timeline.prototype.initVis = function(){
 
     vis.y = d3.scaleLinear()
         .range([vis.height, 0])
-        .domain([0, d3.max(vis.displayData, function(d) { return d.Expenditures; })]);
+        .domain([0, d3.max(vis.displayData, function(d) { return d.Total; })]);
 
     vis.xAxis = d3.axisBottom()
         .scale(vis.x);
@@ -64,7 +64,7 @@ Timeline.prototype.initVis = function(){
     vis.area = d3.area()
         .x(function(d) { return vis.x(d.Year); })
         .y0(vis.height)
-        .y1(function(d) { return vis.y(d.Expenditures); });
+        .y1(function(d) { return vis.y(d.Total); });
 
     // Draw area by using the path generator
     vis.svg.append("path")

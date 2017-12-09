@@ -554,11 +554,12 @@ tr, th {
 /* YOUR CSS STYLES */
 .mytooltip {
     background-color: white;
-    border: solid 1px black;
+    border: solid 1px darkgreen;
+    border-radius: 5px;
     padding: 5px 5px 5px 5px;
-    font-size: 24px;
-    text-align: center
-    color: black;
+    font-size: 14px;
+    text-align: center;
+    color: darkgreen;
 }
 
 table {

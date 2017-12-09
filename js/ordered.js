@@ -165,6 +165,24 @@ OrderedVis.prototype.initVis = function() {
             .attr("transform", "translate(0"  + ", 0)")
             .call(yAxis);
 
+        var xaxis_group = svg.append("g");
+        var yaxis_group = svg.append("g");
+
+        xaxis_group
+            .append("text")
+            .attr("x", (width*11/12))
+            .attr("y", height*7/12)
+            .text("Country")
+            .style("font-size", 12)
+            .attr("stroke", "white");
+
+        yaxis_group
+            .append("text")
+            .attr("transform", "translate(" + -width/15 + "," + (height)*2/3 +") rotate(-90)")
+            .text("% Forest Growth")
+            .style("font-size", 12)
+            .attr("stroke", "white");
+
         svg.append("text")
             .text("Forest Area Change (2000-2015)")
             .attr("class", "ordered-title")
