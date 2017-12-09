@@ -98,7 +98,7 @@ window.addEventListener('scroll', function() {
 
 
 //initialize visualizations
-var youDrawItVis = new youDrawItVis("youDrawItvis", "data/zaatari-refugee-camp-population.csv");
+var youDrawItVis = new youDrawItVis("youDrawItvis", "data/world.csv");
 var orderedVis = new OrderedVis("Orderedvis", "data/country_rates.csv");
 
 // Will be used to the save the loaded JSON data
