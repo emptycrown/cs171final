@@ -152,8 +152,8 @@ StackedAreaChart.prototype.updateVis = function(){
         .attr("class", "mytooltip")
         .attr('x', vis.width)
         .attr('y', function(d,i) {
-            // console.log(d[i].value)
-            return d[i].value
+            console.log(d);
+            return vis.y(d[25].value)
         })
         .attr("stroke", "gray")
         .text(function(d,i) {
