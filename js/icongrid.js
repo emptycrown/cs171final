@@ -65,7 +65,7 @@ TreeGrid.prototype.initVis = function(){
       var id = window.setInterval(moveSlider, 200);
       var yr = 1990;
       function moveSlider() {
-        if(yr == 2015) {
+        if(yr > 2015) {
           window.clearInterval(id);
         } else {
           dateSlider.noUiSlider.set(yr);

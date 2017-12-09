@@ -281,7 +281,7 @@ progress::-webkit-progress-bar {
 
 .item {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: 40px;
     font-size: 3em;
     background: #F5F5F5;
@@ -331,6 +331,7 @@ progress::-webkit-progress-bar {
 
 #icongrid {
     display: inline-block;
+    font-size: 40px;
 }
 
 .section41 {
@@ -395,10 +396,10 @@ html:not(.two) #building-door-frame-right {
 .bottom-icon {
     border-radius: 50%;
     text-align: center;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     position: absolute;
-    bottom: -150px;
+    bottom: -120px;
     color: #fff;
     border: solid 3px;
 }
@@ -409,8 +410,8 @@ html:not(.two) #building-door-frame-right {
 }
 
 .bottom-icon i {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 15px;
 }
 
 .bottom-icon.second {
@@ -631,7 +632,7 @@ tr:nth-child(even) {
 #title {
     color: #fff;
     font-family: 'Raleway';
-    font-size: 75px;
+    font-size: 60px;
     padding-top: 100px;
     font-weight: 700;
 }
@@ -639,7 +640,7 @@ tr:nth-child(even) {
 #subtitle {
     color: #1DE9B6;
     font-family: 'Raleway';
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -665,11 +666,11 @@ tr:nth-child(even) {
     content: " ";
     display: block;
 
-    height: 32px;
+    height: 6%;
     width: 100%;
 
     position: relative;
-    bottom: 6%;
+    bottom: 12%;
     left:0;
 }
 
@@ -699,7 +700,7 @@ body {
 
 #titlepage {
     width: 100%;
-    height: 90%;
+    height: 100%;
     background: #43cea2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -710,6 +711,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 25%;
   margin: 0 auto;
   z-index: 0;
 }
@@ -729,19 +731,18 @@ body {
 }
 
 #section1 {
-    position: absolute;
 }
 
 #section2 {
-    margin-top: 45%;
     background: #fff;
-    height: 110%;
+    height: 120%;
 }
 
 #section3 {
     -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     padding-top: 10%;
+    position: relative;
 }
 
 #section4 {
@@ -749,6 +750,13 @@ body {
     background: #43cea2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#section42 {
+    margin-right: 20%;
+}
+
+.subsection4 {
+    position: absolute;
 }
 
 #section4-text {
@@ -762,6 +770,13 @@ body {
 #section5 {
     background: #fff;
     height: 90%;
+}
+
+#section5-button {
+    margin-top: -70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
 }
 
 #section6 {
@@ -820,13 +835,23 @@ body {
 .panel:hover {
     margin-top: -10px;
 }
+.panel>h3 {
+    font-size: 25px;
+}
+.panel>p {
+    font-size: 16px;
+}
 
 .split-pane:nth-child(1) {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .split-pane:nth-child(2) {
-    margin-top: 30px;
+    margin-top: 0px;
+}
+
+.split-pane:nth-child(3) {
+    margin-top: -30px;
 }
 
 .white {

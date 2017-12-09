@@ -1,9 +1,12 @@
+// Code borrowed from here: https://stackoverflow.com/questions/17202548/wavy-shape-with-css
+
+
 class Waves {
   constructor(canvas, options) {
     const defaults = {
       height: 120,
       width: 1440,
-      waveHeightMultiplier: 0.5,
+      waveHeightMultiplier: 0.9,
       count: 3,
       speed: 0.8,
     }
