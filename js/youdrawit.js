@@ -13,7 +13,7 @@ youDrawItVis.prototype.initVis = function() {
 
     var margin = {top: 50, right: 50, bottom: 120, left: 50};
 
-    var width = 650 - margin.left - margin.right,
+    var width = 700 - margin.left - margin.right,
         height = 450 - margin.top - margin.bottom;
 
     // Parse the date / time
@@ -27,6 +27,7 @@ youDrawItVis.prototype.initVis = function() {
             d.date = parseTime(d.date);
             d.population = +d.population;
         });
+        console.log(data);
 
         var maxDate = d3.max(data, function (d) {
             return d.date;
@@ -45,7 +46,8 @@ youDrawItVis.prototype.initVis = function() {
             return d.population;
         });
         var populationScale = d3.scaleLinear()
-            .domain([minPopulation, maxPopulation])
+            // .domain([minPopulation, maxPopulation])
+            .domain([30.,32.])
             .range([height, 0]);
 
 
@@ -83,6 +85,7 @@ youDrawItVis.prototype.initVis = function() {
 
         focus.append("line")
             .attr("class", "x")
+            .style("stroke", "blue")
             .attr("y1", 0)
             .attr("y2", height);
 
@@ -95,15 +98,15 @@ youDrawItVis.prototype.initVis = function() {
         var mouse = false;
         var lastCoordinate = -1;
         var drawData = [];
-        var displayData = data.slice(0, 101);
-        vis.correctData = data.slice(101);
+        var displayData = data.slice(0, 11);
+        vis.correctData = data.slice(10);
         var corrected = false;
 
         vis.svg.append("path")
             .datum(displayData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "#00C853")
+            .attr("stroke", "green")
             .attr("fill", "none")
             .attr("id", "display");
 
@@ -111,7 +114,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(drawData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "#00BFA5")
+            .attr("stroke", "blue")
             .attr("fill", "none")
             .attr("id", "user")
             .attr("stroke-dasharray", "5 2");
@@ -133,22 +136,26 @@ youDrawItVis.prototype.initVis = function() {
             .on("mouseup", decrement)
             .on("mouseout", decrement);
 
-        // d3.select("body").select("#" + vis.parentElement).append("div")
-        //     .attr("width", 70)
-        //     .attr("height", 40)
-        //     .attr("class", "done-button-container")
-        //     .html("<i class='fa fa-check'></i>")
-        //     .on("click", showCorrect);
+        vis.svg.append("text")
+            .attr("x", width - 85)
+            .attr("y", 35)
+            .text("DONE");
 
-
-        $("#done-button").click(showCorrect);
+        vis.svg.append("rect")
+            .attr("x", width - 100)
+            .attr("y", 10)
+            .attr("opacity", .7)
+            .attr("width", 70)
+            .attr("height", 40)
+            .style("fill", "red")
+            .on("click", showCorrect);
 
         function showCorrect() {
             vis.svg.append("path")
                 .datum(vis.correctData)
                 .attr("d", vis.line)
                 .attr("stroke-width", 2)
-                .attr("stroke", "#FF1744")
+                .attr("stroke", "red")
                 .attr("fill", "none")
                 .attr("id", "correct");
         }
@@ -160,7 +167,7 @@ youDrawItVis.prototype.initVis = function() {
                 d0 = data[i - 1],
                 d1 = data[i],
                 iSelect = x0 - d0.date > d1.date - x0 ? i : i - 1;
-            lastCoordinate = iSelect - 100;
+            lastCoordinate = iSelect - 10;
             console.log("MOUSE PRESSED");
 
             // if (!corrected) {
@@ -191,12 +198,12 @@ youDrawItVis.prototype.initVis = function() {
                     d = x0 - d0.date > d1.date - x0 ? d1 : d0,
                     iSelect = x0 - d0.date > d1.date - x0 ? i : i - 1;
                 // console.log(iSelect);
-                if (iSelect > 100) {
-                    var effSelect = iSelect - 100;
+                if (iSelect > 10) {
+                    var effSelect = iSelect - 10;
                     if (effSelect > drawData.length - 1) {
                         for (var i = drawData.length; i <= effSelect; i++) {
                             drawData.push({
-                                date: data[i + 100].date,
+                                date: data[i + 10].date,
                                 population: populationScale.invert(d3.mouse(this)[1])
                             });
                         }
@@ -237,7 +244,7 @@ youDrawItVis.prototype.initVis = function() {
 
         var xAxis = d3.axisBottom()
             .scale(dateScale)
-            .tickFormat(d3.timeFormat("%B %Y"));
+            .tickFormat(d3.timeFormat("%Y"));
 
         vis.svg.append("g")
             .attr("class", "axis x-axis")
@@ -258,8 +265,8 @@ youDrawItVis.prototype.initVis = function() {
             .call(yAxis);
 
         vis.svg.append("text")
-            .text("Global Forest Acreage")
-            .attr("class", "youdrawit-title")
+            .text("World Aggregate Forest Area")
+            .attr("class", "title")
             .attr("x", width / 2)
             .attr("y", 0);
 
