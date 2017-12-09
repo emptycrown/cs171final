@@ -28,7 +28,7 @@ scatter.prototype.initVis = function() {
 
    function updateVis() {
 
-        vis.val = d3.select("#icon-select").property("value");
+        vis.val = 2015;
         vis.data.forEach(function(d){
             d[1989] = (d[vis.val] - d[1990]) / d[1990] || 0;
         });
@@ -156,7 +156,7 @@ scatter.prototype.initVis = function() {
         yaxis_group
             .append("text")
             .attr("transform", "translate(" + -vis.margin.left/2 + "," + (vis.height-vis.padding)/3 +") rotate(-90)")
-            .text("Forest Growth since 1990 (%)")
+            .text("% Forest Growth (2015 - 1990)")
             .attr("stroke", "black");
 
     }

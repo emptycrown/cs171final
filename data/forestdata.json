@@ -1,93 +1,113 @@
 {
   "years": [
     {
+      "Year": 1990,
+      "Total": 156.946011186282
+    },
+    {
+      "Year": 1991,
+      "Total": 156.520248098048
+    },
+    {
+      "Year": 1992,
+      "Total": 156.09585311298
+    },
+    {
+      "Year": 1993,
+      "Total": 155.672745340003
+    },
+    {
       "Year": 1995,
-      "Expenditures": 40828356.9
+      "Total": 155.261931065345
+    },
+    {
+      "Year": 1995,
+      "Total": 154.838048195292
     },
     {
       "Year": 1996,
-      "Expenditures": 40755591.2
+      "Total": 152.717567273346
     },
     {
       "Year": 1997,
-      "Expenditures": 40682826
+      "Total": 153.9279374576
     },
     {
       "Year": 1998,
-      "Expenditures": 40610060.2
+      "Total": 153.526988774975
     },
     {
       "Year": 1999,
-      "Expenditures": 40537295.1
+      "Total": 153.093220847924
     },
     {
       "Year": 2000,
-      "Expenditures": 40464529.5
+      "Total": 152.688054388284
     },
     {
       "Year": 2001,
-      "Expenditures": 40418814.1
+      "Total": 152.414879755678
     },
     {
       "Year": 2002,
-      "Expenditures": 40373098.6
+      "Total": 152.143233010539
     },
     {
       "Year": 2003,
-      "Expenditures": 40327383.3
+      "Total": 151.869557625343
     },
     {
       "Year": 2004,
-      "Expenditures": 40281667.9
+      "Total": 151.598003078602
     },
     {
       "Year": 2005,
-      "Expenditures": 40235952.5
+      "Total": 151.323804755088
     },
     {
       "Year": 2006,
-      "Expenditures": 40201872.6
+      "Total": 151.075460132899
     },
     {
       "Year": 2007,
-      "Expenditures": 40167792.3
+      "Total": 150.823413563155
     },
     {
       "Year": 2008,
-      "Expenditures": 40133712.7
+      "Total": 150.584626862683
     },
     {
       "Year": 2009,
-      "Expenditures": 40099632.7
+      "Total": 150.333898370598
     },
     {
       "Year": 2010,
-      "Expenditures": 40065552.8
+      "Total": 150.078967308413
     },
     {
       "Year": 2011,
-      "Expenditures": 39960923.6
+      "Total": 149.435531443381
     },
     {
       "Year": 2012,
-      "Expenditures": 39927864.5
+      "Total": 149.1933137756
     },
     {
       "Year": 2013,
-      "Expenditures": 39894805.4
+      "Total": 148.949936455885
     },
     {
       "Year": 2014,
-      "Expenditures": 39861746.3
+      "Total": 148.70667633606
     },
     {
       "Year": 2015,
-      "Expenditures": 39828687.1
+      "Total": 148.461390919503
     }
   ],
   "layers":[
     {
-      "Year": 1995,
+      "Year": 1990,
       "Low Income": 0,
       "Lower middle income":0,
       "Middle income":0,
@@ -95,164 +115,204 @@
       "High income":0
     },
     {
+      "Year": 1991,
+      "Low Income": -0.00561902982515526,
+      "Lower middle income":-0.00603159373026912,
+      "Middle income":-0.00215419695798717,
+      "Upper middle income":-0.000890912153941851,
+      "High income":0.00097586436080104
+    },
+    {
+      "Year": 1992,
+      "Low Income": -0.0112380596503106,
+      "Lower middle income":-0.0119945124093366,
+      "Middle income":-0.00430458988112313,
+      "Upper middle income":-0.00180062692587327,
+      "High income":0.00194929947921988
+    },
+    {
+      "Year": 1993,
+      "Low Income": -0.0168570894754629,
+      "Lower middle income":-0.0180284161597157,
+      "Middle income":-0.00641868861569612,
+      "Upper middle income":-0.00263518104050426,
+      "High income":0.00290442766799543
+    },
+    {
+      "Year": 1994,
+      "Low Income": -0.0224761193006182,
+      "Lower middle income":-0.0237667976983449,
+      "Middle income":-0.00843499642189209,
+      "Upper middle income":-0.00345221326874631,
+      "High income":0.00385783370872417
+    },
+    {
+      "Year": 1995,
+      "Low Income": -0.0280951491257735,
+      "Lower middle income":-0.0297986761694283,
+      "Middle income":-0.0105581977370866,
+      "Upper middle income":-0.00430051370469531,
+      "High income":0.00481125040538761
+    },
+    {
       "Year": 1996,
-      "Low Income": -0.00578146082931994,
-      "Lower middle income":-0.00621760649990779,
-      "Middle income":-0.00217863175131933,
-      "Upper middle income":-0.000897522092535844,
-      "High income":0.0009517293267811
+      "Low Income": -0.0337141789509289,
+      "Lower middle income":-0.0358310062266964,
+      "Middle income":-0.0127138270635792,
+      "Upper middle income":-0.00519417599117194,
+      "High income":0.005767558740278
     },
     {
       "Year": 1997,
-      "Low Income": -0.0115629216586399,
-      "Lower middle income":-0.0124347555964805,
-      "Middle income":-0.00436975290364224,
-      "Upper middle income":-0.00181271474673816,
-      "High income":-6.70165074348854E-05
+      "Low Income": -0.0393332087760842,
+      "Lower middle income":-0.0418628925106433,
+      "Middle income":-0.01488181392551,
+      "Upper middle income":-0.00610543284682243,
+      "High income":0.00474391146475416
     },
     {
       "Year": 1998,
-      "Low Income": -0.0173443824879565,
-      "Lower middle income":-0.0186519410905025,
-      "Middle income":-0.0062352366708158,
-      "Upper middle income":-0.0022709204240844,
-      "High income":0.000880566563178498
+      "Low Income": -0.0449522386012364,
+      "Lower middle income":-0.0478948141074437,
+      "Middle income":-0.0167276015461944,
+      "Upper middle income":-0.00656166800437367,
+      "High income":0.00569605359480017
     },
     {
       "Year": 1999,
-      "Low Income": -0.0231258433172764,
-      "Lower middle income":-0.0248690854094296,
-      "Middle income":-0.00850174582978877,
-      "Upper middle income":-0.00329153829425802,
-      "High income":0.00182845795412281
+      "Low Income": -0.0505712684263917,
+      "Lower middle income":-0.0539266957561124,
+      "Middle income":-0.018970180453294,
+      "Upper middle income":-0.00757789669340935,
+      "High income":0.00664850552858343
     },
     {
       "Year": 2000,
-      "Low Income": -0.0289327040470656,
-      "Lower middle income":-0.0304818317575889,
-      "Middle income":-0.0104219671143392,
-      "Upper middle income":-0.00407232305738775,
-      "High income":0.00252346464033518
+      "Low Income": -0.0562149845380249,
+      "Lower middle income":-0.0593721896934218,
+      "Middle income":-0.0208701276618232,
+      "Upper middle income":-0.00835532368096482,
+      "High income":0.00734685606599658
     },
     {
       "Year": 2001,
-      "Low Income": -0.0343555865739294,
-      "Lower middle income":-0.0327667269460752,
-      "Middle income":-0.0114324261721891,
-      "Upper middle income":-0.00467763740771968,
-      "High income":0.00292130464383348
+      "Low Income": -0.061485510371605,
+      "Lower middle income":-0.0615889980301054,
+      "Middle income":-0.0218699180931351,
+      "Upper middle income":-0.0089580348686375,
+      "High income":0.00774661017737299
     },
     {
       "Year": 2002,
-      "Low Income": -0.0397784691007934,
-      "Lower middle income":-0.0350274216682932,
-      "Middle income":-0.0124204348261632,
-      "Upper middle income":-0.00526125198376391,
-      "High income":0.00329661487111933
+      "Low Income": -0.0667560362051851,
+      "Lower middle income":-0.063782327042378,
+      "Middle income":-0.0228474951563746,
+      "Upper middle income":-0.00953913960219919,
+      "High income":0.00812372611614202
     },
     {
       "Year": 2003,
-      "Low Income": -0.0452013516276573,
-      "Lower middle income":-0.0372828323192302,
-      "Middle income":-0.013434959168153,
-      "Upper middle income":-0.00588438026400897,
-      "High income":0.00367460085456401
+      "Low Income": -0.0720265620387652,
+      "Lower middle income":-0.0659705294416986,
+      "Middle income":-0.0238513079497526,
+      "Upper middle income":-0.0101595881107353,
+      "High income":0.00850353068480278
     },
     {
       "Year": 2004,
-      "Low Income": -0.0506242341545211,
-      "Lower middle income":-0.0394913420601133,
-      "Middle income":-0.0144383891184023,
-      "Upper middle income":-0.00651120361331688,
-      "High income":0.00407293725357986
+      "Low Income": -0.0772970878723453,
+      "Lower middle income":-0.0681132285159961,
+      "Middle income":-0.0248441434881718,
+      "Upper middle income":-0.0107837157976391,
+      "High income":0.00890378357997987
     },
     {
       "Year": 2005,
-      "Low Income": -0.0560471166813851,
-      "Lower middle income":-0.0417748669469431,
-      "Middle income":-0.0154601438103799,
-      "Upper middle income":-0.00713302859104585,
-      "High income":0.00446678356854343
+      "Low Income": -0.0825676137059254,
+      "Lower middle income":-0.0703287073841985,
+      "Middle income":-0.0258551102920727,
+      "Upper middle income":-0.0114028666085294,
+      "High income":0.00929952478818596
     },
     {
       "Year": 2006,
-      "Low Income": -0.0616573643498486,
-      "Lower middle income":-0.0445891489901011,
-      "Middle income":-0.0159766017642831,
-      "Upper middle income":-0.00691649255777867,
-      "High income":0.00487762201655395
+      "Low Income": -0.0880202406295109,
+      "Lower middle income":-0.073059127548103,
+      "Middle income":-0.0263661153807757,
+      "Upper middle income":-0.0111872617914408,
+      "High income":0.00971233988284603
     },
     {
       "Year": 2007,
-      "Low Income": -0.0672676120183121,
-      "Lower middle income":-0.0473984555384105,
-      "Middle income":-0.0165317417430606,
-      "Upper middle income":-0.00675652264517394,
-      "High income":0.00526764726363322
+      "Low Income": -0.0934728675530964,
+      "Lower middle income":-0.0757847204803187,
+      "Middle income":-0.0269153940818856,
+      "Upper middle income":-0.0110279798316376,
+      "High income":0.0101042416390534
     },
     {
       "Year": 2008,
-      "Low Income": -0.0728778596867756,
-      "Lower middle income":-0.0501975109069335,
-      "Middle income":-0.0170771646694559,
-      "Upper middle income":-0.00658708292763698,
-      "High income":0.00609032142003188
+      "Low Income": -0.098925494476682,
+      "Lower middle income":-0.0785003677043348,
+      "Middle income":-0.0274550583251736,
+      "Upper middle income":-0.010859268791928,
+      "High income":0.0109308738868206
     },
     {
       "Year": 2009,
-      "Low Income": -0.0784881073552391,
-      "Lower middle income":-0.0530272756302684,
-      "Middle income":-0.0176054154323634,
-      "Upper middle income":-0.00638054234134284,
-      "High income":0.00645846928495721
+      "Low Income": -0.104378121400267,
+      "Lower middle income":-0.0812458091850433,
+      "Middle income":-0.0279777317120716,
+      "Upper middle income":-0.0106536164362558,
+      "High income":0.0113007930033103
     },
     {
       "Year": 2010,
-      "Low Income": -0.0841469495583845,
-      "Lower middle income":-0.0558316347266843,
-      "Middle income":-0.0181641161570194,
-      "Upper middle income":-0.00622760060524456,
-      "High income":0.00680751881909763
+      "Low Income": -0.109877977587836,
+      "Lower middle income":-0.0839666020928823,
+      "Middle income":-0.0285305335640007,
+      "Upper middle income":-0.0105013324281897,
+      "High income":0.0116515219021633
     },
     {
       "Year": 2011,
-      "Low Income": -0.0888915018885167,
-      "Lower middle income":-0.070458329140518,
-      "Middle income":-0.021784952986631,
-      "Upper middle income":-0.00635940999887332,
-      "High income":0.00796718589237397
+      "Low Income": -0.114489231012718,
+      "Lower middle income":-0.0981574403764491,
+      "Middle income":-0.0321131408823916,
+      "Upper middle income":-0.0106325749737147,
+      "High income":0.0128167684241161
     },
     {
       "Year": 2012,
-      "Low Income": -0.0936186025105118,
-      "Lower middle income":-0.0739666955745295,
-      "Middle income":-0.0227153367955516,
-      "Upper middle income":-0.0064721038325194,
-      "High income":0.00920058751539211
+      "Low Income": -0.119083523037806,
+      "Lower middle income":-0.10156126213521,
+      "Middle income":-0.0330337015150862,
+      "Upper middle income":-0.0107447841659848,
+      "High income":0.0140561042511929
     },
     {
       "Year": 2013,
-      "Low Income": -0.098346040017655,
-      "Lower middle income":-0.0774782746187028,
-      "Middle income":-0.0236268319387147,
-      "Upper middle income":-0.00655655269172475,
-      "High income":0.0103403470405502
+      "Low Income": -0.123678142483203,
+      "Lower middle income":-0.104968200772602,
+      "Middle income":-0.0339355729122914,
+      "Upper middle income":-0.0108288698517137,
+      "High income":0.0152013474448285
     },
     {
       "Year": 2014,
-      "Low Income": -0.103073138873462,
-      "Lower middle income":-0.0809436627662625,
-      "Middle income":-0.0245492851038937,
-      "Upper middle income":-0.0066764027841939,
-      "High income":0.0114947768972401
+      "Low Income": -0.128272432791724,
+      "Lower middle income":-0.108330324940952,
+      "Middle income":-0.0348482866345492,
+      "Upper middle income":-0.0109482045272177,
+      "High income":0.0163613315526344
     },
     {
       "Year": 2015,
-      "Low Income": -0.107800237729269,
-      "Lower middle income":-0.0844574421755202,
-      "Middle income":-0.0254880621638061,
-      "Upper middle income":-0.00679873869052155,
-      "High income":0.0126472816394348
+      "Low Income": -0.132866723100245,
+      "Lower middle income":-0.111739398375462,
+      "Middle income":-0.035777151900632,
+      "Upper middle income":-0.0110700143263036,
+      "High income":0.0175193812837372
     }
   ]
 }

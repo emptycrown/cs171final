@@ -135,7 +135,7 @@ function loadData() {
             });
 
             allData.years.forEach(function(d){
-                d.Expenditures = parseFloat(d.Expenditures) - 35000000;
+                d.Total = parseFloat(d.Total) - 100;
                 d.Year = parseDate(d.Year.toString());
             });
 

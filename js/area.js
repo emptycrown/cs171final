@@ -22,9 +22,9 @@ StackedAreaChart = function(_parentElement, _data){
 StackedAreaChart.prototype.initVis = function(){
     var vis = this;
 
-    vis.margin = { top: 40, right: 0, bottom: 30, left: 60 };
+    vis.margin = { top: 40, right: 150, bottom: 30, left: 60 };
 
-    vis.width = 900 - vis.margin.left - vis.margin.right;
+    vis.width = 1000 - vis.margin.left - vis.margin.right;
     vis.height = 300 - vis.margin.top - vis.margin.bottom;
 
 
@@ -72,13 +72,6 @@ StackedAreaChart.prototype.initVis = function(){
 
     // TO-DO: Initialize stack layout
     var dataCategories = colorScale.domain();
-
-    // TO-DO: Tooltip placeholder
-    vis.svg.append("text")
-        .attr("class", "mytooltip")
-        .attr('x', "0px")
-        .attr('y', "-10px")
-        .attr("stroke", "black");
 
     // TO-DO: (Filter, aggregate, modify data)
 
@@ -150,6 +143,23 @@ StackedAreaChart.prototype.updateVis = function(){
         .append("g")
         .attr("class", "category");
 
+    // TO-DO: Tooltip placeholder
+    var tooltip_text = vis.svg.selectAll("text")
+        .data(vis.displayData);
+
+    tooltip_text.enter()
+        .append("text")
+        .attr("class", "mytooltip")
+        .attr('x', vis.width)
+        .attr('y', function(d,i) {
+            // console.log(d[i].value)
+            return d[i].value
+        })
+        .attr("stroke", "gray")
+        .text(function(d,i) {
+            return dataCategories[i];
+        });
+
     categories.append("path")
         .attr("class", "line")
         .attr("d", function(d){return vis.line(d)})
@@ -159,7 +169,7 @@ StackedAreaChart.prototype.updateVis = function(){
         .style("stroke-width", 5)
         .attr("fill", "none")
         .on("mouseover", function(d,i) {
-            d3.select(".mytooltip").text(dataCategories[i])
+            d3.select(".mytooltip").attr("stroke", "black");
         });
 
     // TO-DO: Update tooltip text
