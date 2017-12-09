@@ -670,7 +670,7 @@ tr:nth-child(even) {
     width: 100%;
 
     position: relative;
-    bottom: 12%;
+    bottom: 11%;
     left:0;
 }
 
@@ -684,7 +684,7 @@ tr:nth-child(even) {
     content: " ";
     display: block;
 
-    height: 32px;
+    height: 6%;
     width: 100%;
 
     position: relative;
@@ -741,7 +741,7 @@ body {
 #section3 {
     -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
-    padding-top: 10%;
+    padding-top: 15%;
     position: relative;
 }
 
@@ -752,7 +752,7 @@ body {
     background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #section42 {
-    margin-right: 20%;
+    margin-right: 30%;
 }
 
 .subsection4 {

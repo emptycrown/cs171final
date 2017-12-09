@@ -106,7 +106,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(displayData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "green")
+            .attr("stroke", "#00C853")
             .attr("fill", "none")
             .attr("id", "display");
 
@@ -114,7 +114,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(drawData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "blue")
+            .attr("stroke", "#00BFA5")
             .attr("fill", "none")
             .attr("id", "user")
             .attr("stroke-dasharray", "5 2");
@@ -136,31 +136,20 @@ youDrawItVis.prototype.initVis = function() {
             .on("mouseup", decrement)
             .on("mouseout", decrement);
 
-        vis.svg.append("text")
-            .attr("x", width - 85)
-            .attr("y", 35)
-            .text("DONE");
-
-        vis.svg.append("rect")
-            .attr("x", width - 100)
-            .attr("y", 10)
-            .attr("opacity", .7)
-            .attr("width", 70)
-            .attr("height", 40)
-            .style("fill", "red")
-            .on("click", showCorrect);
+        $("#done-button").click(showCorrect);
 
         function showCorrect() {
             vis.svg.append("path")
                 .datum(vis.correctData)
                 .attr("d", vis.line)
                 .attr("stroke-width", 2)
-                .attr("stroke", "red")
+                .attr("stroke", "#FF1744")
                 .attr("fill", "none")
                 .attr("id", "correct");
         }
 
         function increment() {
+            d3.event.preventDefault();
             mouse = true;
             var x0 = dateScale.invert(d3.mouse(this)[0]),
                 i = bisectDate(data, x0, 1),
@@ -189,6 +178,7 @@ youDrawItVis.prototype.initVis = function() {
         }
 
         function mouseclick() {
+            d3.event.preventDefault();
             // console.log(d3.mouse(this));
             if (mouse) {
                 var x0 = dateScale.invert(d3.mouse(this)[0]),
@@ -266,7 +256,7 @@ youDrawItVis.prototype.initVis = function() {
 
         vis.svg.append("text")
             .text("World Aggregate Forest Area")
-            .attr("class", "title")
+            .attr("class", "youdrawit-title")
             .attr("x", width / 2)
             .attr("y", 0);
 
