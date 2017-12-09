@@ -19,7 +19,7 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Raleway';
     font-weight: 700;
     margin-bottom: 42px;
@@ -28,7 +28,7 @@ h3 {
 
 p, ol {
     color: grey;
-    font-size: 18px
+    font-size: 16px
 }
 
 ul {
@@ -281,7 +281,7 @@ progress::-webkit-progress-bar {
 
 .item {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: 40px;
     font-size: 3em;
     background: #F5F5F5;
@@ -331,6 +331,7 @@ progress::-webkit-progress-bar {
 
 #icongrid {
     display: inline-block;
+    font-size: 40px;
 }
 
 .section41 {
@@ -395,10 +396,10 @@ html:not(.two) #building-door-frame-right {
 .bottom-icon {
     border-radius: 50%;
     text-align: center;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     position: absolute;
-    bottom: -150px;
+    bottom: -120px;
     color: #fff;
     border: solid 3px;
 }
@@ -409,8 +410,8 @@ html:not(.two) #building-door-frame-right {
 }
 
 .bottom-icon i {
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 15px;
 }
 
 .bottom-icon.second {
@@ -632,7 +633,7 @@ tr:nth-child(even) {
 #title {
     color: #fff;
     font-family: 'Raleway';
-    font-size: 75px;
+    font-size: 60px;
     padding-top: 100px;
     font-weight: 700;
 }
@@ -640,7 +641,7 @@ tr:nth-child(even) {
 #subtitle {
     color: #1DE9B6;
     font-family: 'Raleway';
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -666,11 +667,11 @@ tr:nth-child(even) {
     content: " ";
     display: block;
 
-    height: 32px;
+    height: 6%;
     width: 100%;
 
     position: relative;
-    bottom: 6%;
+    bottom: 11%;
     left:0;
 }
 
@@ -684,7 +685,7 @@ tr:nth-child(even) {
     content: " ";
     display: block;
 
-    height: 32px;
+    height: 6%;
     width: 100%;
 
     position: relative;
@@ -700,7 +701,7 @@ body {
 
 #titlepage {
     width: 100%;
-    height: 90%;
+    height: 100%;
     background: #43cea2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -711,6 +712,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 30%;
   margin: 0 auto;
   z-index: 0;
 }
@@ -730,19 +732,18 @@ body {
 }
 
 #section1 {
-    position: absolute;
 }
 
 #section2 {
-    margin-top: 45%;
     background: #fff;
-    height: 110%;
+    height: 120%;
 }
 
 #section3 {
     -webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
-    padding-top: 10%;
+    padding-top: 15%;
+    position: relative;
 }
 
 #section4 {
@@ -750,6 +751,13 @@ body {
     background: #43cea2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#section42 {
+    margin-right: 30%;
+}
+
+.subsection4 {
+    position: absolute;
 }
 
 #section4-text {
@@ -763,6 +771,13 @@ body {
 #section5 {
     background: #fff;
     height: 90%;
+}
+
+#section5-button {
+    margin-top: -70px;
+    position: absolute;
+    left: 50%;
+    margin-left: -125px;
 }
 
 #section6 {
@@ -821,13 +836,23 @@ body {
 .panel:hover {
     margin-top: -10px;
 }
+.panel>h3 {
+    font-size: 23px;
+}
+.panel>p {
+    font-size: 14px;
+}
 
 .split-pane:nth-child(1) {
-    margin-top: 60px;
+    margin-top: -30px;
 }
 
 .split-pane:nth-child(2) {
-    margin-top: 30px;
+    margin-top: -60px;
+}
+
+.split-pane:nth-child(3) {
+    margin-top: -90px;
 }
 
 .white {
@@ -859,7 +884,7 @@ body {
 }
 #tree3 {
     position: absolute;
-    right: 24%;
+    right: 22%;
     bottom: 0px;
 }
 
@@ -868,18 +893,18 @@ body {
   margin: auto;
   display: block;
   margin-top: 8%;
-  width: 220px;
-  height: 220px;
+  width: 160px;
+  height: 160px;
   background: none;
 }
 
 #tree2>.tree-box {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 #tree3>.tree-box {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
 }
 .tree-top{
   position: absolute;
@@ -928,7 +953,7 @@ body {
     background: #FAFAFA;
     position: absolute;
     width: 30%;
-    height: 500px;
+    height: 60%;
     border-radius: 3px;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
     padding: 32px;
@@ -937,12 +962,12 @@ body {
 .animated-left {
     left: -30%;
     top: 10%;
-    padding-right: 120px;
+    padding-right: 7%;
 }
 .animated-right {
     right: -30%;
     top: 10%;
-    padding-left: 120px;
+    padding-left: 7%;
 }
 .animated-center {
     top: 10%;
