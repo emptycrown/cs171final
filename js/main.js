@@ -62,6 +62,20 @@ $("#enter-button").click(function() {
     }, 500);
 });
 
+$("#more-button").click(function() {
+    //open in new tab
+    window.open("https://www.worldwildlife.org/threats/deforestation", "_blank");
+});
+
+$("#learn-button").click(function() {
+    //open in new tab
+    window.open("https://www.worldwildlife.org/threats/deforestation", "_blank");
+});
+
+$("#donate-button").click(function() {
+    //open in new tab
+    window.open("https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=4&cuid=11", "_blank");
+});
 
 AOS.init({
     duration: 1200,

@@ -30,7 +30,7 @@ TreeGrid.prototype.initVis = function(){
     // Create two timestamps to define a range.
         range: {
             min: 1990,
-            max: 2015
+            max: 2012
         },
         tooltips: true,
         step: 1,
@@ -50,12 +50,12 @@ TreeGrid.prototype.initVis = function(){
 
     dateSlider.noUiSlider.on('update', function( values, handle ){
       var year = values[handle];
-      var frac = (vis.displayData[year] - vis.displayData[2015])*0.55 / (vis.displayData[1990] - vis.displayData[2015]) + 0.45;
+      var frac = (vis.displayData[year] - vis.displayData[2012])*0.55 / (vis.displayData[1990] - vis.displayData[2012]) + 0.45;
       vis.updateVis(frac);
     });
 
 
-    for(var year=1990; year<=2015; year++) {
+    for(var year=1990; year<=2012; year++) {
       vis.displayData[year] = vis.data.map(function(d) {return d[year]}).reduce(function(a,b) {return a+b}, 0);
     }
     
@@ -65,7 +65,7 @@ TreeGrid.prototype.initVis = function(){
       var id = window.setInterval(moveSlider, 200);
       var yr = 1990;
       function moveSlider() {
-        if(yr > 2015) {
+        if(yr > 2012) {
           window.clearInterval(id);
         } else {
           dateSlider.noUiSlider.set(yr);

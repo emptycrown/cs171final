@@ -559,13 +559,13 @@ tr, th {
 
 /* YOUR CSS STYLES */
 .mytooltip {
-    background-color: white;
-    border: solid 1px darkgreen;
+    background-color: floralwhite;
+    border: solid 2px #01579B;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
     font-size: 14px;
     text-align: center;
-    color: darkgreen;
+    color: #01579B;
 }
 
 table {
@@ -619,9 +619,6 @@ tr:hover {
 .NA {
     background-color: #8c564b
 }
-
-
-
 
 .line {
     opacity: 0.5;
@@ -749,7 +746,9 @@ body {
   z-index: 10;
 }
 
-
+.tree-legend{
+    margin-left: -175px;
+}
 
 .section {
     height: 85%;
@@ -757,6 +756,7 @@ body {
     background: #EEEEEE;
     font-family: 'Lato', sans-serif;
     padding-top: 5%;
+    position: relative;
 }
 
 .section2-background {
@@ -790,8 +790,8 @@ body {
     opacity: 0.5;
     width: 100%;
     height: 100%;
-    -webkit-clip-path: polygon(0% 100%, 0 89%, 21% 78%, 45% 82%, 69% 64%, 100% 57%, 100% 100%);
-    clip-path: polygon(0% 100%, 0 89%, 21% 78%, 45% 82%, 69% 64%, 100% 57%, 100% 100%);
+    -webkit-clip-path: polygon(0% 100%, 0 93%, 21% 81%, 45% 87%, 69% 69%, 100% 62%, 100% 100%);
+    clip-path: polygon(0% 100%, 0 95%, 21% 83%, 45% 87%, 69% 69%, 100% 62%, 100% 100%);
 }
 
 .section-content {
@@ -843,7 +843,7 @@ body {
 
 #section5 {
     background: #fff;
-    height: 90%;
+    height: 100%;
     position: relative;
 }
 
@@ -855,14 +855,15 @@ body {
 }
 
 #section6 {
-    height: 90%;
+    padding-top: 10%;
+    height: 100%;
     position: relative;
 }
 
 .section6-trees {
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 85%;
     margin-left: -100px;
 }
 
@@ -873,13 +874,27 @@ body {
     position: relative;
 }
 
+#section7 a {
+    color: #43cea2;
+    font-weight: 1.5;
+}
+
 #section8 {
     background: #fff;
 }
 
 #section9{
-    height: 350px;
+    height: 700px;
     text-align: center;
+}
+
+#section9 p{
+    font-size: smaller;
+}
+
+
+#section9 h4 {
+    font-size: 20px;
 }
 
 .sexy-button {
@@ -1064,8 +1079,91 @@ body {
     left: 35%;
 }
 
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
 
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
 
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: margin-top .2s;
+    z-index: 5;
+}
+
+.card:hover {
+    margin-top: -10px;
+}
+
+.my-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: margin-top .2s;
+    z-index: 5;
+    height: 30%;
+    position: absolute;
+    background: #fff;
+    width: 60%;
+    left: 20%;
+    border-radius: 10px;
+}
+
+.my-card:hover {
+    margin-top: -10px;
+}
+
+.card-header {
+    background: #00BFA5;
+    background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-text {
+    height: 100%;
+    font-weight: bold;
+    position: relative;
+
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+#legendrow {
+    background: white;
+    border: none;
+}
+
+#circle-legend {
+    font-size: 16px;
+}
 
 
 
