@@ -268,7 +268,7 @@ youDrawItVis.prototype.initVis = function() {
         yaxis_group
             .append("text")
             .attr("transform", "translate(" + -margin.left*3/4 + "," + height*3/4 +") rotate(-90)")
-            .text("Forest Area (Millions of Acres)")
+            .text("Forest Area (Millions of Sq Kms)")
             .style("font-size", 12)
             .attr("stroke", "black");
 
