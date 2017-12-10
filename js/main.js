@@ -67,10 +67,10 @@ $("#more-button").click(function() {
     window.open("https://www.worldwildlife.org/threats/deforestation", "_blank");
 });
 
-// $("#learn-button").click(function() {
-//     //open in new tab
-//     window.open("https://www.worldwildlife.org/threats/deforestation", "_blank");
-// });
+$("#learn-button").click(function() {
+    //open in new tab
+    window.open("https://link.springer.com/article/10.1007/s00267-003-0230-z", "_blank");
+});
 
 $("#donate-button").click(function() {
     //open in new tab
