@@ -679,11 +679,11 @@ tr:hover {
     content: " ";
     display: block;
 
-    height: 6%;
+    height: 22px;
     width: 100%;
 
-    position: relative;
-    bottom: 11%;
+    position: absolute;
+    top: -22px;
     left:0;
 }
 
@@ -697,11 +697,11 @@ tr:hover {
     content: " ";
     display: block;
 
-    height: 6%;
+    height:22px;
     width: 100%;
 
-    position: relative;
-    bottom: 15%;
+    position: absolute;
+    top: -22px;
     left:0;
 }
 
@@ -1114,6 +1114,7 @@ body {
     background: #fff;
     width: 60%;
     left: 20%;
+    bottom: -10%;
     border-radius: 10px;
 }
 
