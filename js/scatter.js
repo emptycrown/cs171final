@@ -13,7 +13,7 @@ scatter.prototype.initVis = function() {
     vis.margin = {top: 0, right: 10, bottom: 40, left: 100};
 
     vis.width = 650 - vis.margin.left - vis.margin.right,
-    vis.height = 450 - vis.margin.top - vis.margin.bottom;
+    vis.height = 425 - vis.margin.top - vis.margin.bottom;
 
     vis.padding = 20;
 
