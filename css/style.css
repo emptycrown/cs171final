@@ -843,20 +843,20 @@ body {
 
 #section5 {
     background: #fff;
-    height: 100%;
+    height: 90%;
     position: relative;
 }
 
-#section5-button {
-    margin-top: -70px;
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-}
+/*#section5-button {*/
+    /*margin-top: -70px;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*margin-left: -150px;*/
+/*}*/
 
 #section6 {
     padding-top: 10%;
-    height: 100%;
+    height: 90%;
     position: relative;
 }
 
@@ -1109,7 +1109,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: margin-top .2s;
     z-index: 5;
-    height: 30%;
+    height: 40%;
     position: absolute;
     background: #fff;
     width: 60%;
