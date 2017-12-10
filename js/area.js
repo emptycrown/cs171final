@@ -142,7 +142,9 @@ StackedAreaChart.prototype.updateVis = function(){
         .attr("id", function(d,i) {return "mytooltip"+i})
         .attr('x', vis.width + vis.margin.left/10)
         .attr('y', function(d,i) {
-            return vis.y(d[25].value)
+            var lastelement = vis.line(d).split(",");
+            var getid  = lastelement [lastelement.length-1];
+            return getid
         })
         .attr("stroke", "gray")
         .text(function(d,i) {
@@ -151,7 +153,10 @@ StackedAreaChart.prototype.updateVis = function(){
 
     categories.append("path")
         .attr("class", "line")
-        .attr("d", function(d){return vis.line(d)})
+        .attr("d", function(d){
+            console.log(vis.line(d))
+            return vis.line(d)
+        })
         .attr("stroke", function(d,i) {
             return colorScale(dataCategories[i]);
         })
@@ -159,7 +164,12 @@ StackedAreaChart.prototype.updateVis = function(){
         .attr("fill", "none")
         .on("mouseover", function(d,i) {
             d3.select("#mytooltip"+i).attr("stroke", "black")
-                .style("stroke-width", 1.5);
+                .style("stroke-width", 1.5)
+                .attr('y', function(d,i) {
+                    var lastelement = vis.line(d).split(",");
+                    var getid  = lastelement [lastelement.length-1];
+                    return getid
+                });
         })
         .on("mouseleave", function(d,i) {
             d3.select("#mytooltip"+i).attr("stroke", "gray")

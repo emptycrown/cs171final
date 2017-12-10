@@ -559,18 +559,18 @@ tr, th {
 
 /* YOUR CSS STYLES */
 .mytooltip {
-    background-color: floralwhite;
-    border: solid 2px #01579B;
+    background-color: white;
+    border: solid 2px lightseagreen;
     border-radius: 5px;
     padding: 5px 5px 5px 5px;
     font-size: 14px;
     text-align: center;
-    color: #01579B;
+    color: lightseagreen;
 }
 
 table {
-    font-size: 10px;
-    margin-left: -70px;
+    font-size: 11px;
+    margin-left: 0px;
     cursor: pointer;
 }
 
@@ -885,7 +885,7 @@ body {
 }
 
 #section9{
-    height: 700px;
+    height: 725px;
     text-align: center;
 }
 
@@ -1098,16 +1098,30 @@ body {
 /* Add some shadows to create a card effect */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: margin-top .2s;
     z-index: 5;
 }
 
-.card:hover {
-    margin-top: -10px;
+
+.card-left .card-right {
+    transition: left .2s, right .2s;
+}
+.card-center:hover {
+    width: 105%;
+    margin-left: -2.5%;
+}
+
+.card-left:hover {
+    margin-left: -10px;
+    /*right: 10px;*/
+}
+
+.card-right:hover {
+    margin-right: -10px;
+    /*left: 10px;*/
 }
 
 .my-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
     transition: margin-top .2s;
     z-index: 5;
     height: 275px;
@@ -1127,6 +1141,11 @@ body {
 .my-card-fixed-bottom {
     position: absolute;
     bottom: 25px;
+}
+
+.donate-fixed-bottom {
+    position: absolute;
+    bottom: 35px;
 }
 
 .card-header {

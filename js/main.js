@@ -69,7 +69,7 @@ $("#more-button").click(function() {
 
 $("#learn-button").click(function() {
     //open in new tab
-    window.open("https://link.springer.com/article/10.1007/s00267-003-0230-z", "_blank");
+    window.open("https://link-springer-com.ezp-prod1.hul.harvard.edu/article/10.1007/s00267-003-0230-z", "_blank");
 });
 
 $("#donate-button").click(function() {
@@ -153,8 +153,6 @@ function loadData() {
                 d.Year = parseDate(d.Year.toString());
             });
 
-            console.log(allData)
-
             // Update color scale (all column headers except "Year")
             // We will use the color scale later for the stacked area chart
             colorScale.domain(d3.keys(allData.layers[0]).filter(function(d){ return d != "Year"; }))
@@ -230,8 +228,6 @@ function brushed() {
 
     // Convert the extent into the corresponding domain values
     var selectionDomain = selectionRange.map(timeline.x.invert);
-
-    console.log(selectionDomain)
 
     areachart.x.domain(selectionDomain);
     areachart.wrangleData();

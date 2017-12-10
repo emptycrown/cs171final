@@ -27,7 +27,6 @@ youDrawItVis.prototype.initVis = function() {
             d.date = parseTime(d.date);
             d.population = +d.population;
         });
-        console.log(data);
 
         var maxDate = d3.max(data, function (d) {
             return d.date;

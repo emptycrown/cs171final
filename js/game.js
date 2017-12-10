@@ -7,7 +7,7 @@ collision_targets = [base_circle];
 //enemies = [];
 threshold = 50;
 start_text = "Press Space to Start";
-pause_text = "Game Over, Refresh Page to Restart";
+pause_text = "Game Over";
 pattern_interval = 4000;
 
 var enemyGeneration = -1;

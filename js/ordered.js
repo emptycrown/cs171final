@@ -128,12 +128,14 @@ OrderedVis.prototype.initVis = function() {
                 .attr("transform",
                     "translate(" + (indexScale(x0) + displacement) + ",40)")
                 .attr("text-anchor", anchor)
+                .style("font-size", 17)
                 .text(allData[x0]['country']);
 
             focus.select("text.txtRate")
                 .attr("transform",
                     "translate(" + (indexScale(x0) + displacement) + ",53)")
                 .attr("text-anchor", anchor)
+                .style("font-size", 12)
                 .text("Change in forest area: " + (100 * allData[x0]['change']).toFixed(2) + "%");
 
             focus.select("line.x")
