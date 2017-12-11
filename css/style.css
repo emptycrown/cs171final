@@ -207,6 +207,7 @@ progress {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 5;
 
     /* Dimensions */
     width: 100%;
@@ -229,6 +230,7 @@ progress {
 
 progress::-webkit-progress-bar {
     background-color: transparent;
+    z-index: 5;
 }
 
 .flat::-webkit-progress-value {
@@ -273,11 +275,16 @@ progress::-webkit-progress-bar {
     display: block;
 }
 
+#progressBar {
+    z-index: 5;
+}
+
 .progress-bar {
     background-color: #18FFFF;
     width: 50%;
     display: block;
     height: inherit;
+    z-index: 5;
 }
 
 .item {
@@ -862,12 +869,19 @@ body {
     color: black;
 }
 
-/*#section5-button {*/
-    /*margin-top: -70px;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*margin-left: -150px;*/
-/*}*/
+#section6 .info-text {
+    font-size: 13px;
+    text-align: left;
+}
+
+#section6 #info-icon {
+    vertical-align: -7px;
+    color: black;
+}
+
+#section6 .info-text:hover {
+    color: black;
+}
 
 #section6 {
     padding-top: 150px;
@@ -907,7 +921,6 @@ body {
     font-size: smaller;
 }
 
-
 #section9 h4 {
     font-size: 20px;
 }
@@ -942,6 +955,7 @@ body {
 .section-text {
     margin-bottom: 50px;
 }
+
 .section-text-full {
     margin: 0 100px 50px;
 }
@@ -1123,6 +1137,7 @@ body {
 .card-left .card-right {
     transition: left .2s, right .2s;
 }
+
 .card-center:hover {
     width: 106%;
     margin-left: -2.5%;
@@ -1141,7 +1156,7 @@ body {
 .my-card {
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
     transition: margin-top .2s;
-    z-index: 5;
+    z-index: 0;
     height: 275px;
     position: absolute;
     background: #fff;
