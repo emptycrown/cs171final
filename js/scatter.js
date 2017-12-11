@@ -99,7 +99,7 @@ scatter.prototype.initVis = function() {
             .domain([min_pop, max_pop])
             .range([5, 30]);
 
-        var colorPalette = d3.scaleOrdinal(d3.schemeCategory10);
+        var colorPalette = d3.scaleOrdinal(d3.schemePaired);
 
         colorPalette.domain(function (d){
             return d.Region;
@@ -114,7 +114,7 @@ scatter.prototype.initVis = function() {
 
         vis.svg.call(vis.tooltip);
 
-       vis.svg.selectAll("circle").remove();
+        vis.svg.selectAll("circle").remove();
 
         vis.circles = vis.svg.selectAll("circle")
             .data(vis.filteredData);

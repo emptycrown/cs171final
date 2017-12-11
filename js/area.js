@@ -121,6 +121,8 @@ StackedAreaChart.prototype.updateVis = function(){
         .y(function(d) {return vis.y(d.value); })
         .curve(d3.curveLinear);
 
+    var colorPalette = d3.scaleOrdinal(d3.schemePaired);
+
     var dataCategories = colorScale.domain();
 
 // Draw the layers
@@ -154,11 +156,10 @@ StackedAreaChart.prototype.updateVis = function(){
     categories.append("path")
         .attr("class", "line")
         .attr("d", function(d){
-            console.log(vis.line(d))
             return vis.line(d)
         })
         .attr("stroke", function(d,i) {
-            return colorScale(dataCategories[i]);
+            return colorPalette(dataCategories[i]);
         })
         .style("stroke-width", 5)
         .attr("fill", "none")

@@ -593,31 +593,31 @@ tr:hover {
 }
 
 .SA {
-    background-color: #e377c2
+    background-color: #fb9a99
 }
 
 .LA {
-    background-color: #9467bd
+    background-color: #fdbf6f
 }
 
 .EUR {
-    background-color: #2ca02c
+    background-color: #33a02c
 }
 
 .EA {
-    background-color: #ff7f0e
+    background-color: #1f78b4
 }
 
 .ME {
-    background-color: #d62728
+    background-color: #ff7f00
 }
 
 .SSA {
-    background-color: #7f7f7f
+    background-color: #b2df8a
 }
 
 .NA {
-    background-color: #8c564b
+    background-color: #e31a1c
 }
 
 .line {
@@ -807,7 +807,7 @@ body {
 
 #section2 {
     background: #fff;
-    height: 120%;
+    height: 900px;
     position: relative;
 }
 
@@ -846,6 +846,20 @@ body {
     background: #fff;
     height: 850px;
     position: relative;
+}
+
+#section5 .info-text {
+    font-size: 13px;
+    text-align: left;
+}
+
+#section5 #info-icon {
+    vertical-align: -7px;
+    color: black;
+}
+
+#section5 .info-text:hover {
+    color: black;
 }
 
 /*#section5-button {*/
@@ -913,6 +927,10 @@ body {
     background: #FEAC5E;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #D500F9, #FF9100);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #D500F9, #FF9100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sexy-button i {
+    vertical-align: -5px;
 }
 
 .sexy-button:hover {
@@ -1106,7 +1124,7 @@ body {
     transition: left .2s, right .2s;
 }
 .card-center:hover {
-    width: 105%;
+    width: 106%;
     margin-left: -2.5%;
 }
 
