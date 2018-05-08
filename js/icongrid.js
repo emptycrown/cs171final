@@ -29,8 +29,8 @@ TreeGrid.prototype.initVis = function(){
     noUiSlider.create(dateSlider, {
     // Create two timestamps to define a range.
         range: {
-            min: 1990,
-            max: 2012
+            min: 2001,
+            max: 2011
         },
         tooltips: true,
         step: 1,
@@ -44,18 +44,18 @@ TreeGrid.prototype.initVis = function(){
         },
 
     // Two more timestamps indicate the handle starting positions.
-        start: 1990,
+        start: 2001,
 
     });
 
     dateSlider.noUiSlider.on('update', function( values, handle ){
       var year = values[handle];
-      var frac = (vis.displayData[year] - vis.displayData[2012])*0.55 / (vis.displayData[1990] - vis.displayData[2012]) + 0.45;
+      var frac = (vis.displayData[year] - vis.displayData[2011])*0.65 / (vis.displayData[2001] - vis.displayData[2011]) + 0.25;
       vis.updateVis(frac);
     });
 
 
-    for(var year=1990; year<=2012; year++) {
+    for(var year=2001; year<=2011; year++) {
       vis.displayData[year] = vis.data.map(function(d) {return d[year]}).reduce(function(a,b) {return a+b}, 0);
     }
     
@@ -63,9 +63,9 @@ TreeGrid.prototype.initVis = function(){
 
     function playVis() {
       var id = window.setInterval(moveSlider, 200);
-      var yr = 1990;
+      var yr = 2001;
       function moveSlider() {
-        if(yr > 2012) {
+        if(yr > 2011) {
           window.clearInterval(id);
         } else {
           dateSlider.noUiSlider.set(yr);
@@ -101,15 +101,15 @@ TreeGrid.prototype.updateVis = function(frac){
 
     $("#trees").empty();
 
-    var n = 60;
+    var n = 70;
     for(var i=0; i<n; i++) {
       if(i < Math.floor(frac * n)) {
         $("#trees").append(
-          $("<i class='fa fa-tree tree-filled'></i>")
+          $("<i class='fa fa-female tree-filled'></i>")
         );
       } else {
         $("#trees").append(
-          $("<i class='fa fa-tree tree-blank'></i>")
+          $("<i class='fa fa-female tree-blank'></i>")
         );
       }
       

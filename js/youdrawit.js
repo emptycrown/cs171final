@@ -46,7 +46,7 @@ youDrawItVis.prototype.initVis = function() {
         });
         var populationScale = d3.scaleLinear()
             // .domain([minPopulation, maxPopulation])
-            .domain([30.,32.])
+            .domain([5,50])
             .range([height, 0]);
 
 
@@ -105,7 +105,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(displayData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "#00C853")
+            .attr("stroke", "#9bc5c3")
             .attr("fill", "none")
             .attr("id", "display");
 
@@ -113,7 +113,7 @@ youDrawItVis.prototype.initVis = function() {
             .datum(drawData)
             .attr("d", vis.line)
             .attr("stroke-width", 2)
-            .attr("stroke", "#00BFA5")
+            .attr("stroke", "#A8BFFF")
             .attr("fill", "none")
             .attr("id", "user")
             .attr("stroke-dasharray", "5 2");
@@ -267,12 +267,12 @@ youDrawItVis.prototype.initVis = function() {
         yaxis_group
             .append("text")
             .attr("transform", "translate(" + -margin.left*3/4 + "," + height*3/4 +") rotate(-90)")
-            .text("Forest Area (Millions of Sq Kms)")
+            .text("Women in STEM Occupations (%)")
             .style("font-size", 12)
             .attr("stroke", "black");
 
         vis.svg.append("text")
-            .text("World Aggregate Forest Area")
+            .text("Percentage of Women in STEM")
             .attr("class", "youdrawit-title")
             .attr("x", width / 2)
             .attr("y", 0);

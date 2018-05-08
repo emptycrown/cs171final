@@ -23,7 +23,7 @@ h3 {
     font-family: 'Raleway';
     font-weight: 700;
     margin-bottom: 42px;
-    color: #00BFA5;
+    color: #7579ff;
 }
 
 p, ol {
@@ -225,7 +225,7 @@ progress {
     background-color: transparent;
 
     /* For IE10+, color of the progress bar */
-    color: #18FFFF;
+    color: blue;
 }
 
 progress::-webkit-progress-bar {
@@ -333,6 +333,10 @@ progress::-webkit-progress-bar {
     padding-top: 50px;
 }
 
+.section2 img {
+    padding-left: 100px;
+}
+
 .split {
     position: relative;
 }
@@ -356,11 +360,11 @@ progress::-webkit-progress-bar {
 }
 
 i.tree-filled {
-    color: #00796B;
+    color: #A8BFFF;
 }
 
 i.tree-blank {
-    color: #00796B;
+    color: #A8BFFF;
     opacity: 0.3;
 }
 
@@ -593,40 +597,6 @@ tr:hover {
     background: lightblue;
 }
 
-.SA, .LA, .EUR, .EA, .ME, .SSA, .NA {
-    width: 20px;
-    height: 20px;
-    border: solid 2px 0px 2px 0px black;
-}
-
-.SA {
-    background-color: #fb9a99
-}
-
-.LA {
-    background-color: #fdbf6f
-}
-
-.EUR {
-    background-color: #33a02c
-}
-
-.EA {
-    background-color: #1f78b4
-}
-
-.ME {
-    background-color: #ff7f00
-}
-
-.SSA {
-    background-color: #b2df8a
-}
-
-.NA {
-    background-color: #e31a1c
-}
-
 .line {
     opacity: 0.5;
     clip-path: url(#clip);
@@ -658,7 +628,7 @@ tr:hover {
 }
 
 #subtitle {
-    color: #1DE9B6;
+    color: mediumslateblue;
     font-family: 'Raleway';
     font-size: 40px;
     font-weight: 700;
@@ -667,7 +637,7 @@ tr:hover {
 
 #earthimg {
     margin: 100px;
-    opacity: 0.6;
+    /*opacity: 0.8;*/
 }
 
 #earth-icon {
@@ -722,8 +692,8 @@ body {
     width: 100%;
     height: 100%;
     background: #43cea2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(-45deg, #d9afd9, #97d9e1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #d9afd9, #97d9e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .title-background {
@@ -810,6 +780,7 @@ body {
 }
 
 #section1 {
+
 }
 
 #section2 {
@@ -897,9 +868,9 @@ body {
 }
 
 #section7 {
-    background: #43cea2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(-45deg, #43cea2, #01579B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(-45deg, #43cea2, #01579B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #CBBACC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #CBBACC, #2580B3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #CBBACC, #2580B3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     position: relative;
 }
 
@@ -912,8 +883,8 @@ body {
     background: #fff;
 }
 
-#section9{
-    height: 725px;
+#section9 {
+    height: 650px;
     text-align: center;
 }
 
@@ -923,6 +894,37 @@ body {
 
 #section9 h4 {
     font-size: 20px;
+}
+
+.imgmove {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: black;
+}
+
+.card:hover .imgmove {
+    opacity: 0.2;
+}
+
+.card:hover .middle {
+    opacity: 1;
 }
 
 .sexy-button {
@@ -937,9 +939,9 @@ body {
     border-radius: 20px;
     transition: box-shadow .2s;
     transition: 150ms ease all;
-    background: #FEAC5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D500F9, #FF9100);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D500F9, #FF9100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ee9ca7, #ffdde1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .sexy-button i {
@@ -1134,30 +1136,30 @@ body {
 }
 
 
-.card-left .card-right {
-    transition: left .2s, right .2s;
-}
+/*.card-left .card-right {*/
+    /*transition: left .2s, right .2s;*/
+/*}*/
 
-.card-center:hover {
-    width: 106%;
-    margin-left: -2.5%;
-}
+/*.card-center:hover {*/
+    /*width: 106%;*/
+    /*margin-left: -2.5%;*/
+/*}*/
 
-.card-left:hover {
-    margin-left: -10px;
-    /*right: 10px;*/
-}
+/*.card-left:hover {*/
+    /*margin-left: -10px;*/
+    /*!*right: 10px;*!*/
+/*}*/
 
-.card-right:hover {
-    margin-right: -10px;
-    /*left: 10px;*/
-}
+/*.card-right:hover {*/
+    /*margin-right: -10px;*/
+    /*!*left: 10px;*!*/
+/*}*/
 
 .my-card {
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
     transition: margin-top .2s;
     z-index: 5;
-    height: 275px;
+    height: 150px;
     position: absolute;
     background: #fff;
     width: 50%;

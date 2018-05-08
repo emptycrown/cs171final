@@ -72,10 +72,10 @@ $("#learn-button").click(function() {
     window.open("https://link-springer-com.ezp-prod1.hul.harvard.edu/article/10.1007/s00267-003-0230-z", "_blank");
 });
 
-$("#donate-button").click(function() {
-    //open in new tab
-    window.open("https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=4&cuid=11", "_blank");
-});
+// $("#donate-button").click(function() {
+//     //open in new tab
+//     window.open("https://www.charitynavigator.org/index.cfm?bay=search.results&cgid=4&cuid=11", "_blank");
+// });
 
 AOS.init({
     duration: 1200,

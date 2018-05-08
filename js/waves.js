@@ -65,7 +65,7 @@ class Waves {
     obj.x = -wave.pos.x;
     obj.y = wave.pos.y;
     obj.lineStyle(0);
-    obj.beginFill(0x18FFFF, 0.4);
+    obj.beginFill(0x93a5cf, 0.4);
     obj.blendMode = PIXI.BLEND_MODES.OVERLAY;
 
     obj.moveTo(0,0); //TL
